@@ -6,7 +6,11 @@
 
   <groupId>com.suns</groupId>
   <artifactId>mk-mq</artifactId>
+  <packaging>pom</packaging>
   <version>1.0</version>
+  <modules>
+    <module>mk-mq-activemq</module>
+  </modules>
 
   <name>mk-mq</name>
   <!-- FIXME change it to the project's website -->
@@ -17,13 +21,5 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.apache.activemq</groupId>
-      <artifactId>activemq-all</artifactId>
-      <version>5.9.0</version>
-    </dependency>
-  </dependencies>
 
 </project>
