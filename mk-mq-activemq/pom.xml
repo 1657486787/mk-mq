@@ -15,25 +15,11 @@
     <version>1.0</version>
     <modules>
         <module>amq-no-spring</module>
+        <module>amq-spring</module>
     </modules>
 
     <name>mk-mq-activemq</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>activemq-all</artifactId>
-            <version>5.9.0</version>
-        </dependency>
-
-    </dependencies>
 
 </project>

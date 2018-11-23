@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mk-mq-activemq</artifactId>
+        <groupId>com.suns</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.suns</groupId>
+    <artifactId>amq-spring</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>amq-spring-provider</module>
+        <module>amq-spring-consumer</module>
+    </modules>
+
+    <name>amq-spring</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+</project>
