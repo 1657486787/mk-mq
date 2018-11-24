@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 查找最新的schemaLocation 访问 http://www.springframework.org/schema/ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:amp="http://activemq.apache.org/schema/core" xmlns:jms="http://www.springframework.org/schema/jms"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://activemq.apache.org/schema/core
+        http://activemq.apache.org/schema/core/activemq-core-5.8.0.xsd http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd">
+
+    <context:component-scan base-package="com.suns"/>
+
+    <!--activemq start -->
+    <amp:connectionFactory id="amqConnectionFactory" brokerURL="tcp://127.0.0.1:61616" userName="" password="" />
+    <!-- Spring用于管理真正的ConnectionFactory的ConnectionFactory -->
+    <bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <!-- 配置连接 -->
+        <property name="targetConnectionFactory" ref="amqConnectionFactory"/>
+        <!-- 会话的最大连接数 -->
+        <property name="sessionCacheSize" value="100"/>
+    </bean>
+
+
+    <!-- activemq 消息消费者 start-->
+    <!-- 定义Topic监听器 -->
+    <jms:listener-container connection-factory="connectionFactory" acknowledge="auto"
+                            destination-type="topic" container-type="default">
+        <jms:listener destination="test.topic" ref="topicReceiver1"/>
+        <jms:listener destination="test.topic" ref="topicReceiver2"/>
+    </jms:listener-container>
+    <!-- 定义queue监听器 -->
+    <jms:listener-container connection-factory="connectionFactory" acknowledge="auto"
+                            destination-type="queue" container-type="default">
+        <jms:listener destination="test.queue" ref="queueReceiver1"/>
+        <jms:listener destination="test.queue" ref="queueReceiver2"/>
+    </jms:listener-container>
+    <!-- activemq 消息消费者 end-->
+
+
+</beans>
