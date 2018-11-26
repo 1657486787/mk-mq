@@ -34,10 +34,10 @@ public class ActiveMQController {
 
     @RequestMapping("/queueSender")
     @ResponseBody
-    public String queueSender(@RequestParam("message") String msg){
+    public String queueSender(@RequestParam("message") String msg,@RequestParam("msgType") String msgType){
         String result = "";
         try{
-            queueSender.send("test.queue",msg);
+            queueSender.send("test.queue",msg,msgType);
             result = "suc";
         }catch (Exception e){
             e.printStackTrace();

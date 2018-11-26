@@ -35,7 +35,7 @@
     <jms:listener-container connection-factory="connectionFactory" acknowledge="auto"
                             destination-type="queue" container-type="default">
         <jms:listener destination="test.queue" ref="queueReceiver1"/>
-        <jms:listener destination="test.queue" ref="queueReceiver2"/>
+       <!-- <jms:listener destination="test.queue" ref="queueReceiver2"/>-->
     </jms:listener-container>
     <!-- activemq 消息消费者 end-->
 

@@ -64,7 +64,7 @@ button{
 			type: 'post',
 			url:'<%=basePath%>activemq/'+controller,
 			dataType:'text', 
-			data:{"message":$("#message").val()},
+			data:{"message":$("#message").val(),"msgType":$("#msgType").val()},
 			success:function(data){
 				if(data=="suc"){
 					$("#status").html("<font color=green>发送成功</font>");
@@ -93,6 +93,13 @@ button{
 	<h1>Hello ActiveMQ</h1>
 	<div id="producer">
 		<h2>Producer</h2>
+		<select id="msgType" title="msgType">
+			<option value="textMessage">textMessage</option>
+			<option value="mapMessage">mapMessage</option>
+			<option value="objectMessage">objectMessage</option>
+			<option value="byteMessage">byteMessage</option>
+			<option value="streamMessage">streamMessage</option>
+		</select>
 		<textarea id="message"></textarea>
 		<br>
 		<button onclick="send('queueSender')">发送Queue消息</button>
