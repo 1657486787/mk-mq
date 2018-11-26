@@ -7,25 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e786fcc3-2757-4e03-b166-76f0521b4b0e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/vo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/vo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/queue/QueueReceiver1.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/queue/QueueReceiver1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/amq-spring-consumer-1.0/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/amq-spring-consumer-1.0/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/amq-spring-consumer-1.0/WEB-INF/classes/com/suns/queue/QueueReceiver1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/amq-spring-consumer-1.0/WEB-INF/classes/com/suns/queue/QueueReceiver1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/classes/com/suns/queue/QueueReceiver1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/classes/com/suns/queue/QueueReceiver1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/controller/ActiveMQController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/controller/ActiveMQController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/queue/QueueSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/queue/QueueSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/amq-spring-provider-1.0/WEB-INF/classes/com/suns/controller/ActiveMQController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/amq-spring-provider-1.0/WEB-INF/classes/com/suns/controller/ActiveMQController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/amq-spring-provider-1.0/WEB-INF/classes/com/suns/queue/QueueSender$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/amq-spring-provider-1.0/WEB-INF/classes/com/suns/queue/QueueSender$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/amq-spring-provider-1.0/WEB-INF/classes/com/suns/queue/QueueSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/amq-spring-provider-1.0/WEB-INF/classes/com/suns/queue/QueueSender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/amq-spring-provider-1.0/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/amq-spring-provider-1.0/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/classes/com/suns/controller/ActiveMQController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/classes/com/suns/controller/ActiveMQController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/classes/com/suns/queue/QueueSender$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/classes/com/suns/queue/QueueSender$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/classes/com/suns/queue/QueueSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/classes/com/suns/queue/QueueSender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-spring/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/ActiveMQSpringBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/conf/ActiveMQConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ComsumerQueue1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ConsumerQueue2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ProducerQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ProducerTopic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ConsumerR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerGetResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/test/java/com/suns/normal/queue/ProducerQueueTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,6 +28,7 @@
     <ignored path="$PROJECT_DIR$/mk-mq-activemq/amq-spring/target/" />
     <ignored path="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/target/" />
     <ignored path="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,20 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/resources/applicationContext.xml">
+      <file leaf-file-name="ProducerQueueTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/test/java/com/suns/normal/queue/ProducerQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="16" column="85" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueueSender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/queue/QueueSender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="121" column="58" lean-forward="true" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
+            <state relative-caret-position="217">
+              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActiveMQController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/controller/ActiveMQController.java">
+      <file leaf-file-name="ProducerQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ProducerQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="82">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,29 +65,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/resources/applicationContext.xml">
+      <file leaf-file-name="ConsumerR.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ConsumerR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="-6">
+              <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+              <folding>
+                <element signature="e#1056#1250#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/webapp/index.jsp">
+      <file leaf-file-name="ComsumerQueue1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ComsumerQueue1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="97" column="58" lean-forward="true" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueueReceiver1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/queue/QueueReceiver1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+            <state relative-caret-position="220">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,48 +90,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/vo/User.java">
+      <file leaf-file-name="ProducerR.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="234">
+              <caret line="46" column="103" selection-start-line="46" selection-start-column="103" selection-end-line="46" selection-end-column="103" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#927#1121#0" expanded="true" />
+                <element signature="e#1120#1121#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/vo/User.java">
+      <file leaf-file-name="ProducerGetResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerGetResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-              <folding>
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueueReceiver2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/queue/QueueReceiver2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="182">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,14 +116,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/controller/TestController.java">
+      <file leaf-file-name="ConsumerTopic2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="380">
+              <caret line="25" column="73" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsumerTopic1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="23" column="97" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="97" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar!/javax/jms/Session.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Queue.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar!/javax/jms/Queue.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -176,6 +168,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -227,6 +220,25 @@
         <option value="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/queue/QueueSender.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/queue/QueueReceiver1.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/vo/User.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/AmpSpringBootApplication.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/ActiveMQSpringBootApplication.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ConsumerQueue2.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ProducerTopic.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic1.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/Consumer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/Producer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ProducerQueue.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/readme.txt" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ComsumerQueue1.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/conf/ActiveMQConfiguration.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/test/java/com/suns/normal/queue/ProducerQueueTest.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ConsumerR.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic2.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerGetResponse2.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerGetResponse.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerR.java" />
       </list>
     </option>
   </component>
@@ -248,18 +260,17 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="amq-spring-consumer Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="amp-springboot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="amq-spring-consumer Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="amp-springboot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="amq-spring-consumer Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="amp-springboot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="junit:junit:4.11" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
@@ -299,29 +310,20 @@
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -329,8 +331,7 @@
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -339,8 +340,49 @@
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="suns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="suns" type="462c0819:PsiDirectoryNode" />
+              <item name="ActiveMQSpringBootApplication" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+              <item name="ActiveMQConfiguration" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -350,31 +392,49 @@
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="queue" type="462c0819:PsiDirectoryNode" />
-              <item name="QueueReceiver1" type="1a9f42e2:ClassTreeNode" />
+              <item name="ConsumerQueue2" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="topic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="replayto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="replayto" type="462c0819:PsiDirectoryNode" />
+              <item name="ProducerR" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -383,44 +443,26 @@
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="queue" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -428,12 +470,18 @@
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
               <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-spring-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="amp-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="ProducerQueueTest" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
@@ -442,70 +490,111 @@
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Maven: javax.jms:javax.jms-api:2.0.1" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: javax.jms:javax.jms-api:2.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.jms-api-2.0.1.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="Exception" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.activemq:activemq-all:5.9.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.activemq:activemq-all:5.9.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="activemq-all-5.9.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.activemq:activemq-all:5.9.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="activemq-all-5.9.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: javax.jms:javax.jms-api:2.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.jms-api-2.0.1.jar" type="462c0819:PsiDirectoryNode" />
               <item name="jms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.activemq:activemq-all:5.9.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="activemq-all-5.9.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: javax.jms:javax.jms-api:2.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.jms-api-2.0.1.jar" type="462c0819:PsiDirectoryNode" />
               <item name="jms" type="462c0819:PsiDirectoryNode" />
               <item name="Message" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.activemq:activemq-all:5.9.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="activemq-all-5.9.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: javax.jms:javax.jms-api:2.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.jms-api-2.0.1.jar" type="462c0819:PsiDirectoryNode" />
               <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="MessageListener" type="1a9f42e2:ClassTreeNode" />
+              <item name="Queue" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.activemq:activemq-all:5.9.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="activemq-all-5.9.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: javax.jms:javax.jms-api:2.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.jms-api-2.0.1.jar" type="462c0819:PsiDirectoryNode" />
               <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="StreamMessage" type="1a9f42e2:ClassTreeNode" />
+              <item name="Session" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.activemq:activemq-client:5.15.7" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.activemq:activemq-client:5.15.7" type="70bed36:NamedLibraryElementNode" />
+              <item name="activemq-client-5.15.7.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.activemq:activemq-client:5.15.7" type="70bed36:NamedLibraryElementNode" />
+              <item name="activemq-client-5.15.7.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.activemq:activemq-client:5.15.7" type="70bed36:NamedLibraryElementNode" />
+              <item name="activemq-client-5.15.7.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="ActiveMQQueue" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-messaging:5.1.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-messaging:5.1.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-messaging-5.1.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-messaging:5.1.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-messaging-5.1.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-messaging:5.1.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-messaging-5.1.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="AbstractMessageSendingTemplate" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-messaging:5.1.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-messaging-5.1.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="invocation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-messaging:5.1.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-messaging-5.1.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="invocation" type="462c0819:PsiDirectoryNode" />
+              <item name="InvocableHandlerMethod" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
@@ -517,6 +606,8 @@
     <property name="SearchEverywhereHistoryKey" value="XBeanNamespaceHandler&#9;PSI&#9;JAVA://org.apache.xbean.spring.context.v2.XBeanNamespaceHandler&#10;DriverM&#9;PSI&#9;JAVA://java.sql.DriverManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -526,12 +617,18 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.suns.normal.queue" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amp-springboot\src\main\java\com\suns\replayto" />
       <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amq-spring\amq-spring-consumer\src\main\resources" />
       <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amq-spring\amq-spring-provider\src\main\webapp" />
       <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amq-spring\amq-spring-provider\src\main\resources" />
       <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amq-spring\amq-spring-provider\src\main\webapp\js" />
-      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amq-spring\amq-spring-provider\src\main\webapp\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.suns.vo" />
@@ -552,29 +649,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.amq-spring-provider">
-    <configuration name="JMSConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.usemq.JMSConsumer" />
-      <module name="amq-no-spring" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.suns.usemq.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="JMSConsumerAsync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.usemq.JMSConsumerAsync" />
-      <module name="amq-no-spring" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.suns.usemq.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProducerQueueTest.testReplayTo">
     <configuration name="JSMProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.suns.usemq.JSMProducer" />
       <module name="amq-no-spring" />
@@ -588,6 +663,98 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ProducerQueueTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.suns.normal.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.suns.normal.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.suns.normal.queue.ProducerQueueTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ProducerQueueTest.testNormalQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.suns.normal.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.suns.normal.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.suns.normal.queue.ProducerQueueTest" />
+      <option name="METHOD_NAME" value="testNormalQueue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ProducerQueueTest.testNormalTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.suns.normal.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.suns.normal.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.suns.normal.queue.ProducerQueueTest" />
+      <option name="METHOD_NAME" value="testNormalTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ProducerQueueTest.testReplayTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amp-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.suns.normal.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.suns.normal.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.suns.normal.queue.ProducerQueueTest" />
+      <option name="METHOD_NAME" value="testReplayTo" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -780,14 +947,18 @@
       <item itemvalue="Tomcat Server.amq-spring-provider" />
       <item itemvalue="Tomcat Server.amq-spring-consumer" />
       <item itemvalue="Application.JSMProducer" />
-      <item itemvalue="Application.JMSConsumer" />
-      <item itemvalue="Application.JMSConsumerAsync" />
+      <item itemvalue="JUnit.ProducerQueueTest.test1" />
+      <item itemvalue="JUnit.ProducerQueueTest.testNormalTopic" />
+      <item itemvalue="JUnit.ProducerQueueTest.testReplayTo" />
+      <item itemvalue="JUnit.ProducerQueueTest.testNormalQueue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProducerQueueTest.testReplayTo" />
+        <item itemvalue="JUnit.ProducerQueueTest.testNormalQueue" />
+        <item itemvalue="JUnit.ProducerQueueTest.testNormalTopic" />
+        <item itemvalue="JUnit.ProducerQueueTest.test1" />
         <item itemvalue="Application.JSMProducer" />
-        <item itemvalue="Application.JMSConsumerAsync" />
-        <item itemvalue="Application.JMSConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -807,8 +978,40 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 16h 51m 54s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 16h 52m 22s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 16h 54m 13s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 16h 55m 34s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 16h 57m 00s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 16h 57m 40s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 17h 06m 16s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 17h 35m 57s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 17h 41m 45s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProducerQueueTest_testReplayTo - 2018.11.26 at 17h 47m 36s.xml">
+      <configuration name="ProducerQueueTest.testReplayTo" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30857000" />
+    <option name="totallyTimeSpent" value="44341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -817,7 +1020,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.37248322" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16791044" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.2196162" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -825,28 +1028,55 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.19127516" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43288592" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.13870247" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.25167784" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29865772" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3378076" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20735608" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29865772" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16791044" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.37248322" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.19127516" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.13870247" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -857,332 +1087,42 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ConsumerR.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerR.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ConsumerR.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerR.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ConsumerR.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/AMQConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JMSConsumerAsync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="37" column="83" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JMSConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" selection-start-line="15" selection-end-line="32" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/App.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.3.RELEASE/spring-context-5.0.3.RELEASE.jar!/org/springframework/context/config/spring-context.xsd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.2.RELEASE/spring-amqp-2.0.2.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/5.0.3.RELEASE/spring-jms-5.0.3.RELEASE.jar!/org/springframework/jms/connection/CachingConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/5.0.3.RELEASE/spring-jms-5.0.3.RELEASE.jar!/org/springframework/jms/support/destination/JmsDestinationAccessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/5.0.3.RELEASE/spring-jms-5.0.3.RELEASE.jar!/org/springframework/jms/support/JmsAccessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/5.0.3.RELEASE/spring-jms-5.0.3.RELEASE.jar!/org/springframework/jms/core/JmsTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/App.java" />
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/webapp/js/jquery-1.11.0.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="2714" column="27" selection-start-line="2714" selection-start-column="27" selection-end-line="2714" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/apache/xbean/xbean-spring/3.16/xbean-spring-3.16.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/xbean/xbean-spring/3.16/xbean-spring-3.16.jar!/org/apache/xbean/spring/context/v2/XBeanNamespaceHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="61" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/resources/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/topic/TopicReceiver2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/topic/TopicReceiver1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="60" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/topic/TopicSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.9.0/activemq-all-5.9.0.jar!/javax/jms/MapMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.9.0/activemq-all-5.9.0.jar!/javax/jms/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JSMProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.9.0/activemq-all-5.9.0.jar!/javax/jms/MessageListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.9.0/activemq-all-5.9.0.jar!/javax/jms/Message.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.9.0/activemq-all-5.9.0.jar!/javax/jms/StreamMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/queue/QueueReceiver2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="16" column="85" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="97" column="58" lean-forward="true" selection-start-line="97" selection-start-column="58" selection-end-line="97" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/controller/ActiveMQController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/queue/QueueSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="121" column="58" lean-forward="true" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/java/com/suns/queue/QueueReceiver1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -1204,24 +1144,411 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/src/main/java/com/example/amqspringboot/AmqSpringbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/vo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="333">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/example/ampspringboot/AmpSpringbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JSMProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="40" column="105" selection-start-line="36" selection-start-column="4" selection-end-line="40" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-client/5.15.7/activemq-client-5.15.7.jar!/org/apache/activemq/ActiveMQConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="e#4627#4628#0" expanded="true" />
+            <element signature="e#4667#4668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/java/com/suns/queue/QueueSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="73" column="5" selection-start-line="64" selection-start-column="3" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/test/java/com/example/ampspringboot/AmpSpringbootApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JMSConsumerAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="e#2608#3097#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JMSConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-consumer/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-spring/amq-spring-provider/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="16" column="85" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/5.1.2.RELEASE/spring-jms-5.1.2.RELEASE.jar!/org/springframework/jms/annotation/JmsListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.2.RELEASE/spring-messaging-5.1.2.RELEASE.jar!/org/springframework/messaging/core/MessageRequestReplyOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.2.RELEASE/spring-messaging-5.1.2.RELEASE.jar!/org/springframework/messaging/core/AbstractMessageReceivingTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.2.RELEASE/spring-messaging-5.1.2.RELEASE.jar!/org/springframework/messaging/core/AbstractMessagingTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/5.1.2.RELEASE/spring-jms-5.1.2.RELEASE.jar!/org/springframework/jms/core/JmsMessagingTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/5.1.2.RELEASE/spring-jms-5.1.2.RELEASE.jar!/org/springframework/jms/core/JmsTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="300" column="16" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ProducerTopic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="749" column="6" selection-start-line="749" selection-start-column="6" selection-end-line="749" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/app.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ConsumerQueue2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/ActiveMQSpringBootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/conf/ActiveMQConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1521">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.2.RELEASE/spring-messaging-5.1.2.RELEASE.jar!/org/springframework/messaging/core/AbstractMessageSendingTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar!/javax/jms/Destination.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-client/5.15.7/activemq-client-5.15.7.jar!/org/apache/activemq/command/ActiveMQQueue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.2.RELEASE/spring-messaging-5.1.2.RELEASE.jar!/org/springframework/messaging/handler/invocation/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar!/javax/jms/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="97" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="73" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerGetResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ProducerQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar!/javax/jms/Queue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar!/javax/jms/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/queue/ComsumerQueue1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/test/java/com/suns/normal/queue/ProducerQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ConsumerR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <element signature="e#1056#1250#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerGetResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="46" column="103" selection-start-line="46" selection-start-column="103" selection-end-line="46" selection-end-column="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#927#1121#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
           </folding>
         </state>
       </provider>

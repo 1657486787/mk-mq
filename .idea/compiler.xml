@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="amp-springboot" />
         <module name="amq-no-spring" />
         <module name="amq-spring-consumer" />
         <module name="amq-spring-provider" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="amq-springboot" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
