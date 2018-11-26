@@ -122,5 +122,69 @@ ActiveMq与springboot整合
         }
 
 5.request-response请求响应模式，一般线上用的比较多，就是生产者需要得到消费者的结果
+    5.1生产者：在生产者发送消息时,设置replayto
+    @Service
+    public class ProducerR {
 
+        @Autowired
+        private JmsTemplate jmsTemplate;
+        @Autowired
+        private ProducerGetResponse producerGetResponse;
 
+        public void sendMessage(Destination destination, final String message){
+            jmsTemplate.send(destination, new MessageCreator() {
+                @Override
+                public Message createMessage(Session session) throws JMSException {
+                    TextMessage textMessage = session.createTextMessage(message);
+
+                    //配置，告诉消费者如何应答
+    //                Destination temporaryQueue = session.createTemporaryQueue();
+                    Destination responseQueue = session.createQueue("springboot.produceR-responseQueue");
+                    MessageConsumer responseConsumer = session.createConsumer(responseQueue);
+    //                responseConsumer.setMessageListener(producerGetResponse);//生产者监听结果ProducerGetResponse
+                    textMessage.setJMSReplyTo(responseQueue);
+
+                    String uid = "UID:"+System.currentTimeMillis();
+                    textMessage.setJMSCorrelationID(uid);
+                    return textMessage;
+                }
+            });
+        }
+    }
+
+    5.2 在生产者这段，监听响应的消息队列
+    @Component
+    public class ProducerGetResponse{
+
+        @JmsListener(destination = "springboot.produceR-responseQueue")
+        public void onMessage(Message message) {
+            try {
+                TextMessage textMessage = (TextMessage)message;
+                System.out.println(this.getClass().getName() + " receive:"+textMessage.getText());
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    5.3消费者，收到消息后，需要再调用发送消息
+    @Component
+    public class ConsumerR {
+
+        @Autowired
+        private JmsTemplate jmsTemplate;
+
+        @JmsListener(destination = "springboot.replayto.queue")
+        public void receive(final Message message, final String text) throws JMSException {
+            System.out.println(this.getClass().getName() + " receive:"+text);
+
+            Destination jmsReplyTo = message.getJMSReplyTo();//响应目的地
+            jmsTemplate.send(jmsReplyTo, new MessageCreator() {
+                @Override
+                public Message createMessage(Session session) throws JMSException {
+                    TextMessage textMessage = session.createTextMessage("consumerR响应结果："+text);
+                    return textMessage;
+                }
+            });
+        }
+    }

@@ -27,8 +27,6 @@ import javax.jms.*;
 public class ProducerR {
 
     @Autowired
-    private JmsMessagingTemplate jmsMessagingTemplate;
-    @Autowired
     private JmsTemplate jmsTemplate;
     @Autowired
     private ProducerGetResponse producerGetResponse;
@@ -42,7 +40,6 @@ public class ProducerR {
                 //配置，告诉消费者如何应答
 //                Destination temporaryQueue = session.createTemporaryQueue();
                 Destination responseQueue = session.createQueue("springboot.produceR-responseQueue");
-
                 MessageConsumer responseConsumer = session.createConsumer(responseQueue);
 //                responseConsumer.setMessageListener(producerGetResponse);//生产者监听结果ProducerGetResponse
                 textMessage.setJMSReplyTo(responseQueue);
