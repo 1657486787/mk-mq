@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 查找最新的schemaLocation 访问 http://www.springframework.org/schema/ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:amq="http://activemq.apache.org/schema/core"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/jms
+        http://www.springframework.org/schema/jms/spring-jms-4.0.xsd
+        http://activemq.apache.org/schema/core
+        http://activemq.apache.org/schema/core/activemq-core-5.8.0.xsd">
+
+    <aop:aspectj-autoproxy />
+
+    <context:component-scan base-package="com.suns">
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <amq:connectionFactory id="amqConnectionFactory" brokerURL="tcp://127.0.0.1:61616" userName="" password="" />
+    <!-- Spring用于管理真正的ConnectionFactory的ConnectionFactory -->
+    <bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory" >
+        <!-- 配置连接 -->
+        <property name="targetConnectionFactory" ref="amqConnectionFactory"/>
+        <!-- 会话的最大连接数 -->
+        <property name="sessionCacheSize" value="100"/>
+    </bean>
+
+    <!-- Spring JmsTemplate 的消息生产者 start-->
+    <!-- 定义JmsTemplate的Queue类型 -->
+    <bean id="queueJmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <constructor-arg ref="connectionFactory"/>
+        <property name="pubSubDomain" value="false"/>
+    </bean>
+    <!-- 定义JmsTemplate的Topic类型 -->
+    <bean id="topicJmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <constructor-arg ref="connectionFactory"/>
+        <property name="pubSubDomain" value="true"/>
+    </bean>
+    <!-- Spring JmsTemplate 的消息生产者 end-->
+
+    <!-- Spring JmsTemplate 的消息消费者 start-->
+    <!-- 定义queue监听器 -->
+    <jms:listener-container connection-factory="connectionFactory" container-type="default"
+                            destination-type="queue" acknowledge="auto">
+        <jms:listener destination="asyncApp.queue.email" ref="processEmail" />
+        <jms:listener destination="asyncApp.queue.sms" ref="processSms"/>
+        <!--<jms:listener destination="asyncApp.queue.sms.resp" ref="getConsumerResp"/>-->
+    </jms:listener-container>
+
+    <!-- 定义topic监听器 -->
+    <jms:listener-container connection-factory="connectionFactory" container-type="default"
+                            destination-type="topic" acknowledge="auto">
+        <jms:listener destination="asyncApp.topic" ref="customerService"/>
+        <jms:listener destination="asyncApp.topic" ref="dataCenter"/>
+    </jms:listener-container>
+    <!-- Spring JmsTemplate 的消息消费者 end-->
+
+</beans>

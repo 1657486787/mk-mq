@@ -10,6 +10,7 @@
         <module name="amq-no-spring" />
         <module name="amq-spring-consumer" />
         <module name="amq-spring-provider" />
+        <module name="asyncApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

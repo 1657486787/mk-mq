@@ -16,6 +16,7 @@
     <modules>
         <module>amq-no-spring</module>
         <module>amq-spring</module>
+        <module>asyncApp</module>
     </modules>
 
     <name>mk-mq-activemq</name>
