@@ -114,7 +114,7 @@
             }
         }
 
-3.ActivieMQ内嵌模式
+3.ActivieMQ高级特性-内嵌模式
   3.1 启动EmbedMQ
     public class EmbedMQ {
 
@@ -175,3 +175,22 @@
             });
         }
     }
+4.ActivieMQ高级特性-持久化，默认使用的是kahadb，可以切换成关系型数据库如mysql
+    4.1修改activemq.xml
+    将
+    <persistenceAdapter>
+         <kahaDB directory="${activemq.data}/kahadb"/>
+     </persistenceAdapter>
+    修改为
+    <persistenceAdapter>
+        <jdbcPersistenceAdapter dataSource="#mysql-ds"/>
+    </persistenceAdapter>
+    并且增加id为mysql-ds的配置
+        <bean id="mysql-ds" class="org.apache.commons.dbcp2.BasicDataSource"
+    		destroy-method="close">
+    		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+    		<property name="url" value="jdbc:mysql://10.50.10.201:3306/hhn_mq?relaxAutoCommit=true&amp;characterEncoding=UTF-8"/>
+    		<property name="username" value="develop"/>
+    		<property name="password" value=""/>
+    		<property name="poolPreparedStatements" value="true"/>
+    	</bean>
