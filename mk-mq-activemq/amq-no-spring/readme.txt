@@ -176,21 +176,33 @@
         }
     }
 4.ActivieMQ高级特性-持久化，默认使用的是kahadb，可以切换成关系型数据库如mysql
-    4.1修改activemq.xml
-    将
-    <persistenceAdapter>
-         <kahaDB directory="${activemq.data}/kahadb"/>
-     </persistenceAdapter>
-    修改为
-    <persistenceAdapter>
-        <jdbcPersistenceAdapter dataSource="#mysql-ds"/>
-    </persistenceAdapter>
-    并且增加id为mysql-ds的配置
-        <bean id="mysql-ds" class="org.apache.commons.dbcp2.BasicDataSource"
-    		destroy-method="close">
-    		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-    		<property name="url" value="jdbc:mysql://10.50.10.201:3306/hhn_mq?relaxAutoCommit=true&amp;characterEncoding=UTF-8"/>
-    		<property name="username" value="develop"/>
-    		<property name="password" value=""/>
-    		<property name="poolPreparedStatements" value="true"/>
-    	</bean>
+    4.1新建库名，如hhn_mq
+    4.2修改activemq.xml
+        将
+        <persistenceAdapter>
+             <kahaDB directory="${activemq.data}/kahadb"/>
+         </persistenceAdapter>
+        修改为
+        <persistenceAdapter>
+            <jdbcPersistenceAdapter dataSource="#mysql-ds"/>
+        </persistenceAdapter>
+        并且增加id为mysql-ds的配置
+            <bean id="mysql-ds" class="org.apache.commons.dbcp2.BasicDataSource"
+                destroy-method="close">
+                <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://10.50.10.201:3306/hhn_mq?relaxAutoCommit=true&amp;characterEncoding=UTF-8"/>
+                <property name="username" value="develop"/>
+                <property name="password" value=""/>
+                <property name="poolPreparedStatements" value="true"/>
+            </bean>
+    4.3如果报错com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Specified key was too long; max key length is 1000 bytes，说明索引有问题，可以自己手工创建
+        CREATE TABLE ACTIVEMQ_ACKS (
+          CONTAINER VARCHAR (100) NOT NULL,
+          SUB_DEST VARCHAR (250),
+          CLIENT_ID VARCHAR (100) NOT NULL,
+          SUB_NAME VARCHAR (100) NOT NULL,
+          SELECTOR VARCHAR (250),
+          LAST_ACKED_ID BIGINT,
+          PRIMARY KEY (CONTAINER, CLIENT_ID, SUB_NAME)
+        ) ;
+
