@@ -188,3 +188,46 @@ ActiveMq与springboot整合
             });
         }
     }
+6.使用全注解实现springboot的request-response请求响应模式，一般线上用的比较多，就是生产者需要得到消费者的结果
+    6.1生产者发送消息，监听响应消息
+        @Service
+        public class ProducerRAnnotation {
+
+            @Autowired
+            private JmsMessagingTemplate jmsMessagingTemplate;
+
+            // 发送消息，destination是发送到的队列，message是待发送的消息
+            public void sendMessage(Destination destination, final String message){
+                jmsMessagingTemplate.convertAndSend(destination,message);
+            }
+
+            @JmsListener(destination = "springboot.replayto.queue.annotation.resp")
+            public void receive(String text){
+                System.out.println(this.getClass().getName() + " receive:"+text);
+            }
+
+        }
+    6.2消费者接受消息，并发送给生产者
+        @Service
+        public class ConsumerRAnnotation {
+
+            // 使用JmsListener配置消费者监听的队列，其中text是接收到的消息
+            @JmsListener(destination = "springboot.replayto.queue.annotation")
+            @SendTo("springboot.replayto.queue.annotation.resp")
+            public String receive(String text){
+                System.out.println(this.getClass().getName() + " receive:"+text);
+                return "ConsumerRAnnotation I want you.......";
+            }
+        }
+    6.3测试类
+        @Autowired
+        private ProducerRAnnotation producerRAnnotation;
+        @Test
+        public void testReplayToAnnotation() throws IOException {
+            Destination destination = new ActiveMQQueue("springboot.replayto.queue.annotation");
+            for(int i=0;i<1;i++){
+                producerRAnnotation.sendMessage(destination,"测试请求响应springboot.replayto.queue.annotation,i="+i);
+                System.out.println("testReplayTo send,i="+i);
+            }
+            System.in.read();
+        }

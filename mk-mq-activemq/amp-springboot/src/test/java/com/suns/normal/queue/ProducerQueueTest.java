@@ -2,11 +2,13 @@ package com.suns.normal.queue;
 
 import com.suns.normal.topic.ProducerTopic;
 import com.suns.replayto.ProducerR;
+import com.suns.replayto.annotation.ProducerRAnnotation;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -56,4 +58,16 @@ public class ProducerQueueTest{
         System.in.read();
     }
 
+
+    @Autowired
+    private ProducerRAnnotation producerRAnnotation;
+    @Test
+    public void testReplayToAnnotation() throws IOException {
+        Destination destination = new ActiveMQQueue("springboot.replayto.queue.annotation");
+        for(int i=0;i<1;i++){
+            producerRAnnotation.sendMessage(destination,"测试请求响应springboot.replayto.queue.annotation,i="+i);
+            System.out.println("testReplayTo send,i="+i);
+        }
+        System.in.read();
+    }
 }
