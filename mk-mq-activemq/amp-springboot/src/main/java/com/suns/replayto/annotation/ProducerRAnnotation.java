@@ -11,9 +11,11 @@ package com.suns.replayto.annotation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsMessagingTemplate;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
-import javax.jms.Destination;
+import javax.jms.*;
 
 /**
  * ClassName: ProducerR <br>
@@ -25,12 +27,25 @@ import javax.jms.Destination;
 @Service
 public class ProducerRAnnotation {
 
+//    @Autowired
+//    private JmsMessagingTemplate jmsMessagingTemplate;
     @Autowired
-    private JmsMessagingTemplate jmsMessagingTemplate;
+    private JmsTemplate jmsTemplate;
 
     // 发送消息，destination是发送到的队列，message是待发送的消息
     public void sendMessage(Destination destination, final String message){
-        jmsMessagingTemplate.convertAndSend(destination,message);
+//        jmsMessagingTemplate.convertAndSend(destination,message);
+        jmsTemplate.send(destination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(message);
+
+                String uid = "UID:"+System.currentTimeMillis();
+                System.out.println("send message:"+message+" ,and the uid:"+uid);
+                textMessage.setJMSCorrelationID(uid);
+                return textMessage;
+            }
+        });
     }
 
     @JmsListener(destination = "springboot.replayto.queue.annotation.resp")
