@@ -205,4 +205,33 @@
           LAST_ACKED_ID BIGINT,
           PRIMARY KEY (CONTAINER, CLIENT_ID, SUB_NAME)
         ) ;
+    4.4 启动完成之后会创建三张表
+    SELECT * FROM activemq_msgs;
+    SELECT * FROM `activemq_acks`;
+    SELECT * FROM `activemq_lock`;
+5.ActivieMQ高级特性-消息的持久化订阅
+    分别运行订阅模式和P2P模式，可以发现，P2P模式缺省把消息进行持久化，而topic模式是没有的
+    5.1一般topic模式实验：
+        1、	启动两个消费者，启动一个生产者，发送消息，两个消费者都可以收到。
+        2、	关闭一个消费者，生产者发送消息，活跃的消费者可以收到消息，启动被关闭的消费者，无法收到消息。
+        3、	关闭所有消费者，生产者发送消息，在ActiveMQ控制台可以看见消息已被接收，关闭再启动ActiveMQ，启动消费者收不到消息。
+        如果topic模式下，需要消费者在离线又上线后，不管ActiveMQ是否重启过，都保证可以接受到消息，就需要进行持久化订阅。具体代码参见模块amq-no-spirng包durabletopic
+
+    5.2持久Topic消费者端
+        需要设置客户端id：connection.setClientID("DurableTopic____1");
+        消息的destination变为 Topic
+        消费者类型变为TopicSubscriber
+        消费者创建时变为session.createDurableSubscriber(destination,"任意名字，代表订阅名 ");
+        运行一次消费者，将消费者在ActiveMQ上进行一次注册。然后在ActiveMQ的管理控制台subscribers页面可以看见我们的消费者。
+        效果：
+        1、	运行生产者，发布消息，多个消费者可以正常收到。
+        2、	关闭一个消费者，运行生产者，发布消息后再启动被关闭的消费者，可以收到离线后的消息；
+        3、	关闭所有消费者，运行生产者，发布消息后，关闭ActiveMQ再启动，启动所有消费者，都可以收到消息。
+        注意：生产者端无需另外单独配置JmsDurableTopicProducer
+
+        消费者可以有多个，只是客户端id要设置成不一样的idconnection.setClientID("DurableTopic____1")：JmsDurableTopicConsumer，JmsDurableTopicConsumerOther
+    5.3消息非持久化
+        在生产者JmsDurableTopicProducer中，默认情况下messageProducer.setDeliveryMode(DeliveryMode.PERSISTENT) 是持久化的。
+        修改messageProducer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);来设置消息本身的持久化属性为非持久化。重复上述实验，可以发现，第1,2点保持不变，但是第三点，当关闭ActiveMQ再启动，消费者关闭后再启动，是收不到消息的。
+        说明，即使进行了持久订阅，但是消息本身如果是不持久化的，ActiveMQ关闭再启动，这些非持久化的消息会丢失，进行持久订阅的消费者也是收不到自身离线期间的消息的。
 
