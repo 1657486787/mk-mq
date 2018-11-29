@@ -279,3 +279,40 @@
     ">" 用于递归地匹配任何以这个名字开始的destination。
     订阅者可以明确地指定destination 的名字来订阅消息，或者它也可以使用wildcards 来定义一个分层的模式来匹配它希望订阅的 destination。
     具体情况参见代码，在模块amp-no-spirng包wildcards下。
+
+8.ActivieMQ高级特性-死信队列
+    用来保存处理失败或者过期的消息。
+    出现下面情况时，消息会被重发：
+    i.	事务会话被回滚。
+    ii.	事务会话在提交之前关闭。
+    iii.	会话使用CLIENT_ACKNOWLEDGE模式，并且Session.recover()被调用。
+    iv.	自动应答失败
+    当一个消息被重发超过最大重发次数（缺省为6次，消费者端可以修改）时，会给broker发送一个"有毒标记“，这个消息被认为是有问题，这时broker将这个消息发送到死信队列，以便后续处理。
+    在配置文件(activemq.xml)来调整死信发送策略。
+        <!-- 自定义死信队列的前缀，如queuePrefix="mk.DLQ."-->
+        		<destinationPolicy>
+        			<policyMap>
+        				<policyEntries>
+        					<policyEntry queue=">">
+        						<deadLetterStrategy>
+        							<individualDeadLetterStrategy queuePrefix="mk.DLQ." useQueueForQueueMessages="true" processExpired="false" processNonPersistent="false"/>
+        						</deadLetterStrategy>
+        					</policyEntry>
+        				</policyEntries>
+        			</policyMap>
+        		</destinationPolicy>
+    可以单独使用死信消费者处理这些死信。参见代码，在模块amp-no-spirng包dlq下。
+    注意，该代码中展示了如何配置重发策略。同时，重试策略属于ActiveMQ的部分，所以有部分connectionFactory，connection的声明等等不能使用接口，必须使用ActiveMQ的实现。
+
+    生产者DlqProducer：和普通的生产者的一样
+    消费者DlqConsumer：在普通的消费者之上，可以设置重试策略（通过抛异常来模拟重试次数）
+         //限制了重发次数策略
+        RedeliveryPolicy redeliveryPolicy = new RedeliveryPolicy();
+        redeliveryPolicy.setMaximumRedeliveries(1);
+        // 拿到消费者端重复策略map
+        RedeliveryPolicyMap redeliveryPolicyMap = connection.getRedeliveryPolicyMap();
+        // 将消费者端重发策略配置给消费者
+        redeliveryPolicyMap.put(destination,redeliveryPolicy);
+    处理死信队列的消费者ProcessDlqConsumer:和普通的消费者一样
+
+
