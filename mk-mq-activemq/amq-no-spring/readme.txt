@@ -316,3 +316,10 @@
     处理死信队列的消费者ProcessDlqConsumer:和普通的消费者一样
 
 
+8.ActivieMQ高级特性-虚拟Destination
+    对于消息发布者来说，就是一个正常的Topic(createTopic)，名称以VirtualTopic.开头。例如VirtualTopic.vtgroup
+    对于消息接收端来说，是个队列(createQueue,而不是createTopic)，不同应用里使用不同的前缀作为队列的名称，即可表明自己的身份即可实现消费端应用分组。
+      例如Consumer.A.VirtualTopic. vtgroup，说明它是名称为A群组的消费端，同理Consumer.B.VirtualTopic. vtgroup说明是一个名称为B群组的客户端。
+    默认虚拟主题的前缀是 ：VirtualTopic.
+     消费虚拟地址默认格式：Consumer.*.VirtualTopic.
+    参见代码，在模块amp-no-spirng包virtualtopic下
