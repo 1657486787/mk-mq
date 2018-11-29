@@ -270,3 +270,12 @@
         类似于AUTO_ACK确认机制，为自动批量确认而生，而且具有“延迟”确认的特点，ActiveMQ会根据内部算法，在收到一定数量的消息自动进行确认。在此模式下，可能会出现重复消息，什么时候？当consumer故障重启后，那些尚未ACK的消息会重新发送过来。
     SESSION_TRANSACTED
         当session使用事务时，就是使用此模式。当决定事务中的消息可以确认时，必须调用session.commit()方法，commit方法将会导致当前session的事务中所有消息立即被确认。在事务开始之后的任何时机调用rollback()，意味着当前事务的结束，事务中所有的消息都将被重发。当然在commit之前抛出异常，也会导致事务的rollback。
+
+7.ActivieMQ高级特性-通配符订阅
+    Wildcards 用来支持联合的名字分层体系（federated name hierarchies）。它不是JMS 规范的一部分，而是ActiveMQ 的扩展。ActiveMQ 支持以下三种
+    wildcards：
+    "." 用于作为路径上名字间的分隔符。
+    "*" 用于匹配路径上的任何名字。
+    ">" 用于递归地匹配任何以这个名字开始的destination。
+    订阅者可以明确地指定destination 的名字来订阅消息，或者它也可以使用wildcards 来定义一个分层的模式来匹配它希望订阅的 destination。
+    具体情况参见代码，在模块amp-no-spirng包wildcards下。

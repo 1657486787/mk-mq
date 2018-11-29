@@ -7,10 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e786fcc3-2757-4e03-b166-76f0521b4b0e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityConsumerAsync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityTranProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerAllAny.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducerA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducerB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JmsMsgReliablityProducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityProducer.java">
+      <file leaf-file-name="JmsWildCardsProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+            <state relative-caret-position="220">
+              <caret line="49" column="66" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JmsMsgReliablityTranProducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityTranProducer.java">
+      <file leaf-file-name="JmsWildCardsProducerA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducerA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+            <state relative-caret-position="216">
+              <caret line="55" column="64" lean-forward="true" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,20 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JMSConsumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JMSConsumer.java">
+      <file leaf-file-name="JmsWildCardsProducerB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducerB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="74" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JmsMsgReliablityConsumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityConsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+            <state relative-caret-position="176">
+              <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,52 +72,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JmsMsgReliablityConsumerAsync.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityConsumerAsync.java">
+      <file leaf-file-name="JmsWildCardsConsumerAllAny.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerAllAny.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="200">
+              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1509#1844#0" expanded="true" />
-                <element signature="e#1843#1844#0" expanded="true" />
+                <element signature="e#1755#2134#0" expanded="true" />
+                <element signature="e#2133#2134#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt">
+      <file leaf-file-name="JmsWildCardsConsumerA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
+            <state relative-caret-position="166">
+              <caret line="44" column="62" lean-forward="true" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1710#2089#0" expanded="true" />
+                <element signature="e#2088#2089#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Connection.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.9.0/activemq-all-5.9.0.jar!/javax/jms/Connection.class">
+      <file leaf-file-name="JmsWildCardsConsumerB.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="196">
+              <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1648#2027#0" expanded="true" />
+                <element signature="e#2026#2027#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActiveMQConnection.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.9.0/activemq-all-5.9.0.jar!/org/apache/activemq/ActiveMQConnection.class">
+      <file leaf-file-name="JSMProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JSMProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="229" column="19" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-all/5.9.0/activemq-all-5.9.0.jar!/javax/jms/Session.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state>
+              <caret line="39" column="80" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -160,14 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ConsumerR.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/normal/topic/ConsumerTopic2.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerGetResponse2.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amp-springboot/src/main/java/com/suns/replayto/ProducerGetResponse.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/embed/EmbedJmsProducer.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/embed/EmbedJmsConsumer.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/embed/EmbedMQ.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/vo/User.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/service/IUserReg.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/service/busi/SaveUser.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/service/busi/SendEmail.java" />
@@ -211,6 +197,14 @@
         <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityProducer.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityConsumerAsync.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildcardsProducer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducerA.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducerB.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerAllAny.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerA.java" />
+        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerB.java" />
       </list>
     </option>
   </component>
@@ -309,27 +303,72 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="durabletopic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msgreliablity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="usemq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wildcards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wildcards" type="462c0819:PsiDirectoryNode" />
+              <item name="JmsWildCardsConsumerA" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wildcards" type="462c0819:PsiDirectoryNode" />
+              <item name="JmsWildCardsConsumerAllAny" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wildcards" type="462c0819:PsiDirectoryNode" />
+              <item name="JmsWildCardsConsumerB" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wildcards" type="462c0819:PsiDirectoryNode" />
+              <item name="JmsWildCardsProducer" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="amq-no-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wildcards" type="462c0819:PsiDirectoryNode" />
+              <item name="JmsWildCardsProducerB" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
@@ -411,6 +450,17 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.suns.normal.queue" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\asyncApp\src\main\webapp" />
+      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\asyncApp\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\asyncApp\src\main\webapp\WEB-INF" />
+      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amq-spring\amq-spring-provider\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.suns.wildcards" />
+      <recent name="com.suns.aop" />
+      <recent name="com.suns.vo" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -420,16 +470,6 @@
       <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\asyncApp\src\main\webapp\assets\js" />
       <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\asyncApp\src\main\webapp" />
       <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amp-springboot\src\main\java\com\suns\replayto" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.suns.aop" />
-      <recent name="com.suns.vo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\asyncApp\src\main\webapp" />
-      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\asyncApp\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\asyncApp\src\main\webapp\WEB-INF" />
-      <recent name="D:\lurenz\sun_workspace_cfb_git\project\mk-mq\mk-mq-activemq\amq-spring\amq-spring-provider\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -444,58 +484,58 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JmsMsgReliablityConsumerAsync">
-    <configuration name="JMSConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.usemq.JMSConsumer" />
+  <component name="RunManager" selected="Application.JmsWildCardsProducerB">
+    <configuration name="JmsWildCardsConsumerAllAny" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.wildcards.JmsWildCardsConsumerAllAny" />
       <module name="amq-no-spring" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.usemq.*" />
+          <option name="PATTERN" value="com.suns.wildcards.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="JmsMsgReliablityConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.msgreliablity.JmsMsgReliablityConsumer" />
+    <configuration name="JmsWildCardsConsumerB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.wildcards.JmsWildCardsConsumerB" />
       <module name="amq-no-spring" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.msgreliablity.*" />
+          <option name="PATTERN" value="com.suns.wildcards.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="JmsMsgReliablityConsumerAsync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.msgreliablity.JmsMsgReliablityConsumerAsync" />
+    <configuration name="JmsWildCardsProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.wildcards.JmsWildCardsProducer" />
       <module name="amq-no-spring" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.msgreliablity.*" />
+          <option name="PATTERN" value="com.suns.wildcards.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="JmsMsgReliablityProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.msgreliablity.JmsMsgReliablityProducer" />
+    <configuration name="JmsWildCardsProducerA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.wildcards.JmsWildCardsProducerA" />
       <module name="amq-no-spring" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.msgreliablity.*" />
+          <option name="PATTERN" value="com.suns.wildcards.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="JmsMsgReliablityTranProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.msgreliablity.JmsMsgReliablityTranProducer" />
+    <configuration name="JmsWildCardsProducerB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.wildcards.JmsWildCardsProducerB" />
       <module name="amq-no-spring" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.msgreliablity.*" />
+          <option name="PATTERN" value="com.suns.wildcards.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -767,19 +807,19 @@
       <item itemvalue="Tomcat Server.asyncApp" />
       <item itemvalue="Tomcat Server.amq-spring-provider" />
       <item itemvalue="Tomcat Server.amq-spring-consumer" />
-      <item itemvalue="Application.JMSConsumer" />
-      <item itemvalue="Application.JmsMsgReliablityProducer" />
-      <item itemvalue="Application.JmsMsgReliablityTranProducer" />
-      <item itemvalue="Application.JmsMsgReliablityConsumerAsync" />
-      <item itemvalue="Application.JmsMsgReliablityConsumer" />
+      <item itemvalue="Application.JmsWildCardsConsumerAllAny" />
+      <item itemvalue="Application.JmsWildCardsConsumerB" />
+      <item itemvalue="Application.JmsWildCardsProducer" />
+      <item itemvalue="Application.JmsWildCardsProducerA" />
+      <item itemvalue="Application.JmsWildCardsProducerB" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JmsMsgReliablityConsumerAsync" />
-        <item itemvalue="Application.JmsMsgReliablityProducer" />
-        <item itemvalue="Application.JmsMsgReliablityConsumer" />
-        <item itemvalue="Application.JmsMsgReliablityTranProducer" />
-        <item itemvalue="Application.JMSConsumer" />
+        <item itemvalue="Application.JmsWildCardsProducerB" />
+        <item itemvalue="Application.JmsWildCardsConsumerB" />
+        <item itemvalue="Application.JmsWildCardsProducerA" />
+        <item itemvalue="Application.JmsWildCardsProducer" />
+        <item itemvalue="Application.JmsWildCardsConsumerAllAny" />
       </list>
     </recent_temporary>
   </component>
@@ -796,7 +836,7 @@
       <workItem from="1542936540228" duration="23737000" />
       <workItem from="1543193803363" duration="4102000" />
       <workItem from="1543200083318" duration="3018000" />
-      <workItem from="1543311655614" duration="19137000" />
+      <workItem from="1543311655614" duration="21616000" />
     </task>
     <servers />
   </component>
@@ -833,7 +873,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80528000" />
+    <option name="totallyTimeSpent" value="83007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -860,7 +900,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3098434" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.51789707" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
@@ -939,59 +979,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/service/consumer/topic/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/service/consumer/queue/ProcessEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/4.3.11.RELEASE/spring-jms-4.3.11.RELEASE-sources.jar!/org/springframework/jms/core/JmsTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="591" column="13" lean-forward="true" selection-start-line="591" selection-start-column="13" selection-end-line="591" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/service/consumer/queue/ReplayToProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1050#1293#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/service/impl/SerailProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-activemq/asyncApp/src/main/java/com/suns/service/impl/GetConsumerResp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1274,20 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JSMProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="77" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JMSConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="74" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/msgreliablity/JmsMsgReliablityTranProducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1353,8 +1326,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="267" column="20" selection-start-line="267" selection-start-column="20" selection-end-line="267" selection-end-column="20" />
+        <state relative-caret-position="391">
+          <caret line="277" column="21" lean-forward="true" selection-start-line="277" selection-start-column="21" selection-end-line="277" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JMSConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="74" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/usemq/JSMProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="39" column="80" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="44" column="62" lean-forward="true" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1710#2089#0" expanded="true" />
+            <element signature="e#2088#2089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerAllAny.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1755#2134#0" expanded="true" />
+            <element signature="e#2133#2134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="49" column="66" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducerA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="55" column="64" lean-forward="true" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsProducerB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/wildcards/JmsWildCardsConsumerB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1648#2027#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
