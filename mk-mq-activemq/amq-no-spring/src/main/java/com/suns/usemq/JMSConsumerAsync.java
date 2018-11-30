@@ -74,7 +74,7 @@ public class JMSConsumerAsync {
             });
         } catch (JMSException e) {
             e.printStackTrace();
-        } finally {
+        } /*finally {
             if(null != connection){
                 try {
                     connection.close();
@@ -82,6 +82,6 @@ public class JMSConsumerAsync {
                     e.printStackTrace();
                 }
             }
-        }
+        }*/
     }
 }

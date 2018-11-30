@@ -323,3 +323,13 @@
     默认虚拟主题的前缀是 ：VirtualTopic.
      消费虚拟地址默认格式：Consumer.*.VirtualTopic.
     参见代码，在模块amp-no-spirng包virtualtopic下
+
+9.ActivieMQ高级特性-组合Destination
+    组合队列允许用一个虚拟的destination代表多个destinations。这样就可以通过composite destinations在一个操作中同时向多个destination发送消息。
+    多个destination之间采用“,”分割。例如：
+      Queue queue = new ActiveMQQueue("FOO.A,FOO.B,FOO.C");
+      或
+      Destination destination = session.createQueue("my-queue,my-queue2");
+    如果希望使用不同类型的destination，那么需要加上前缀如queue:// 或topic://，例如：
+        Queue queue = new ActiveMQQueue("cd.queue,topic://cd.mark");
+    参见代码，在模块amq-no-spirng包compositedest下
