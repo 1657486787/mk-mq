@@ -333,3 +333,49 @@
     如果希望使用不同类型的destination，那么需要加上前缀如queue:// 或topic://，例如：
         Queue queue = new ActiveMQQueue("cd.queue,topic://cd.mark");
     参见代码，在模块amq-no-spirng包compositedest下
+
+10.ActivieMQ高级特性-集群
+    有四种方式：
+    1.Pure Master Slave (5.8版本及以下)
+    2.Shared File System Master Slave
+    3.Shared Jdbc Master Slave
+        谁先抢到锁，谁就是Master,对应activemq_locks表，谁先插入谁就是master
+    4.Roplicated LevelDB Store(5.9版本+)
+        需要配合zookeeper使用，利用了zk的master选举（谁能成功创建节点谁就是master）
+
+    以下演示使用3.Shared Jdbc Master Slave
+    参加代码：在模块amq-no-spirng包jq下
+    1.在本地搭建三个activemq，需要在activemq.xml中修改如下配置
+        1.不同的机器修改不同的端口号<transportConnector name="openwire" uri="tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+        2.可以注释其他的transportConnector
+             <!--
+                <transportConnector name="amqp" uri="amqp://0.0.0.0:5672?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+                <transportConnector name="stomp" uri="stomp://0.0.0.0:61613?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+                <transportConnector name="mqtt" uri="mqtt://0.0.0.0:1883?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+                <transportConnector name="ws" uri="ws://0.0.0.0:61614?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600"/>
+            -->
+        3.修改管理后台端口，在jetty.xml中
+        4.修改存储方式为jdbc
+             <!-- 默认持久化用kahadb -->
+               <!--
+                <persistenceAdapter>
+                    <kahaDB directory="${activemq.data}/kahadb"/>
+                </persistenceAdapter>
+                -->
+
+                <!-- 修改持久化用mysql start -->
+                <persistenceAdapter>
+                    <jdbcPersistenceAdapter dataSource="#mysql-ds"/>
+                </persistenceAdapter>
+             <!-- 修改持久化用mysql start -->
+            <!-- 定义数据源 start-->
+            	<bean id="mysql-ds" class="org.apache.commons.dbcp2.BasicDataSource"
+            		destroy-method="close">
+            		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+            		<property name="url" value="jdbc:mysql://10.50.10.201:3306/hhn_mq?relaxAutoCommit=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC"/>
+            		<property name="username" value="develop"/>
+            		<property name="password" value=""/>
+            		<property name="poolPreparedStatements" value="true"/>
+            	</bean>
+            	<!-- 定义数据源 end-->
+        5.代码需要修改的地方只有一个，修改brokerurl为："failover:(tcp://localhost:61616,tcp://localhost:61617,tcp://localhost:61618)";
