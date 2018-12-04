@@ -12,6 +12,7 @@
         <module name="amq-spring-provider" />
         <module name="asyncApp" />
         <module name="delayOrder" />
+        <module name="native" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
