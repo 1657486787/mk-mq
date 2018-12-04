@@ -29,14 +29,13 @@ public class MulitBindConsumer {
         Channel channel = connection.createChannel();
         //队列，路由键，绑定，交换器
         channel.exchangeDeclare(DirectProducer.EXCHANGE_NAME,BuiltinExchangeType.DIRECT);
-        String queueName = "focuserror";
-        channel.queueDeclare(queueName,false,false,false,null);
-//        String[] serverities = {"error","info","warning"};
-        String[] serverities = {"info"};
+        //声明一个随机队列
+        final String queueName = channel.queueDeclare().getQueue();
+        String[] serverities = {"error","info","warning"};
         for(int i=0;i<serverities.length;i++){
             String servieity = serverities[i];
+            channel.queueBind(queueName,DirectProducer.EXCHANGE_NAME,servieity);
         }
-        channel.queueBind(queueName,DirectProducer.EXCHANGE_NAME,"info");
 
         System.out.println("waiting for message........");
 
@@ -45,7 +44,7 @@ public class MulitBindConsumer {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
                 String msg = new String(body,"UTF-8");
-                System.out.println("receive 路由键["+envelope.getRoutingKey()+"] msg:"+msg);
+                System.out.println("queueName["+queueName+"],receive consumerTag["+consumerTag+"],路由键["+envelope.getRoutingKey()+"] msg:"+msg);
             }
         };
         /*消费者正式开始在指定队列上消费消息*/

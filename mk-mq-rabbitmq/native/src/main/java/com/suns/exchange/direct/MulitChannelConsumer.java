@@ -37,7 +37,7 @@ public class MulitChannelConsumer {
                 channel.exchangeDeclare(DirectProducer.EXCHANGE_NAME,BuiltinExchangeType.DIRECT);
 
                 // 声明一个随机队列
-                String queueName = channel.queueDeclare().getQueue();
+                final String queueName = channel.queueDeclare().getQueue();
                 //消费者名字，打印输出用
                 final String consumerName =  Thread.currentThread().getName()+"-all";
 
@@ -54,7 +54,7 @@ public class MulitChannelConsumer {
                     @Override
                     public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
                         String msg = new String(body,"UTF-8");
-                        System.out.println("receive 路由键["+envelope.getRoutingKey()+"] msg:"+msg);
+                        System.out.println("queueName["+queueName+"],receive consumerTag["+consumerTag+"],路由键["+envelope.getRoutingKey()+"] msg:"+msg);
                     }
                 };
 

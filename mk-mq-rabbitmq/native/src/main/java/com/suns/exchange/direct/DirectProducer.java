@@ -35,8 +35,8 @@ public class DirectProducer {
         channel.exchangeDeclare(EXCHANGE_NAME,BuiltinExchangeType.DIRECT);
         /*日志消息级别，作为路由键使用*/
         String[] serverities = {"error","info","warning"};
-        for(int i=0;i<serverities.length;i++){
-            String servieity = serverities[i];
+        for(int i=0;i<3;i++){
+            String servieity = serverities[i%3];
             String message = "你好Hellol,RabbitMq"+(i+1);
             /*发布消息，需要参数：交换器，路由键，其中以日志消息级别为路由键*/
             channel.basicPublish(EXCHANGE_NAME,servieity,null,message.getBytes());

@@ -32,7 +32,7 @@ public class NormalConsumer {
         channel.exchangeDeclare(DirectProducer.EXCHANGE_NAME,BuiltinExchangeType.DIRECT);
 
         /*声明一个队列*/
-        String queueName = "focuserror";
+        final String queueName = "focuserror";
         channel.queueDeclare(queueName,false,false, false,null);
         /*绑定，将队列和交换器通过路由键进行绑定*/
         String routekey = "error";/*表示只关注error级别的日志消息*/
@@ -45,7 +45,7 @@ public class NormalConsumer {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
                 String msg = new String(body,"UTF-8");
-                System.out.println("receive 路由键["+envelope.getRoutingKey()+"] msg:"+msg);
+                System.out.println("queueName["+queueName+"],receive consumerTag["+consumerTag+"],路由键["+envelope.getRoutingKey()+"] msg:"+msg);
             }
         };
 

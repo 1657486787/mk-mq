@@ -51,7 +51,7 @@ public class MultiConsumerOneQueue {
                 }
 
                 //消费者名字，打印输出用
-                final String consumerName =  Thread.currentThread().getName()+"-all";
+                final String consumerName =  Thread.currentThread().getName();
 
                 //所有日志严重性级别
                 String[] severities={"error","info","warning"};
@@ -62,11 +62,12 @@ public class MultiConsumerOneQueue {
                 System.out.println("["+consumerName+"] Waiting for messages:");
 
 
+                final String finalQueueName = queueName;
                 Consumer consumer = new DefaultConsumer(channel){
                     @Override
                     public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
                         String msg = new String(body,"UTF-8");
-                        System.out.println("receive 路由键["+envelope.getRoutingKey()+"] msg:"+msg);
+                        System.out.println("consumerName["+consumerName+"],queueName["+ finalQueueName +"],receive consumerTag["+consumerTag+"],路由键["+envelope.getRoutingKey()+"] msg:"+msg);
                     }
                 };
 
@@ -84,8 +85,8 @@ public class MultiConsumerOneQueue {
         Connection connection = connectionFactory.newConnection();
 
         //3个线程，线程之间共享队列,一个队列多个消费者
-        String queueName = "focusAll";
-//        String queueName = null;
+        String queueName = "focusAll";//
+//        String queueName = null;//多个对个多个消费者
         for(int i=0;i<3;i++){
             new Thread(new ConsumerWorker(connection,queueName)).start();
         }
