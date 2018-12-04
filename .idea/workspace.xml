@@ -400,18 +400,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BcPCProducer">
-    <configuration name="BcOCConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.brokercluster.consumer.BcOCConsumer" />
-      <module name="amq-no-spring" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.suns.brokercluster.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.JSMProducer">
     <configuration name="BcPC2Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.suns.brokercluster.consumer.BcPC2Consumer" />
       <module name="amq-no-spring" />
@@ -452,6 +441,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.suns.brokercluster.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="JSMProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.usemq.JSMProducer" />
+      <module name="amq-no-spring" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.suns.usemq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -803,18 +803,18 @@
       <item itemvalue="Tomcat Server.amq-spring-provider" />
       <item itemvalue="Tomcat Server.amq-spring-consumer" />
       <item itemvalue="Application.BcPC2Consumer" />
-      <item itemvalue="Application.BcOCConsumer" />
       <item itemvalue="Application.BcPC2Producer" />
       <item itemvalue="Application.BcPCConsumer" />
       <item itemvalue="Application.BcPCProducer" />
+      <item itemvalue="Application.JSMProducer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JSMProducer" />
         <item itemvalue="Application.BcPCProducer" />
         <item itemvalue="Application.BcPC2Producer" />
         <item itemvalue="Application.BcPCConsumer" />
         <item itemvalue="Application.BcPC2Consumer" />
-        <item itemvalue="Application.BcOCConsumer" />
       </list>
     </recent_temporary>
   </component>
