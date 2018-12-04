@@ -403,3 +403,26 @@
                     </persistenceAdapter>
                 <!-- 修改持久化用levelDB end -->
             5.代码需要修改的地方只有一个，修改brokerurl为："failover:(tcp://localhost:61616,tcp://localhost:61617,tcp://localhost:61618)?randomize=false";
+
+
+11.ActivieMQ高级特性-负载均衡Broker-Cluster
+    1.static模式
+        Static Discovery集群就是通过硬编码的方式使用所有已知ActiveMQ实例节点的URI地址。如：消息生产者应用连接一个ActiveMQ实例，我们暂时称为MQ1，所有的消息都由该实例提供；两个消息消费者应用分别连接另外两个ActiveMQ实例，分别为MQ2和MQ3，两个消息消费者需要消费MQ1上的消息，但它们连接的都不是MQ1，可以通过Static Discovery方式把MQ1上的消息路由到MQ2和MQ3，为了保证消费者不因某个节点的失效而导致不能消费消息，在消费者应用中需要配置所有节点的URI。
+             在构成集群的ActiveMQ实例的配置文件中添加networkConnectors节点，连接到生产者MQ实例。
+        比如集群中有四台服务器，分别在端口 61616，61617，61618，61619提供服务，，在我们的设计中，61618，61619专为消费者服务，则端口为61618和61619的服务器应该在配置文件的broker节点中增加
+        		<networkConnectors>
+        			  <networkConnector uri="static:(tcp://localhost:61616,tcp://0.0.0.0:61617)" duplex="true"/>
+        		</networkConnectors>
+        默认NetworkConnector在需要转发消息时是单向连接的。当duplex=true时，就变成了双向连接，这时配置在broker2端的指向broker1的duplex networkConnector，相当于即配置了
+        broker2到broker1的网络连接，也配置了broker1到broker2的网络连接。
+    代码在：amq-no-spring:com.suns.brokercluster包下
+
+    2.dync模式
+        Dynamic Discovery集群方式在配置ActiveMQ实例时，不需要知道所有其它实例的URI地址，只需在所有实例的activemq.xml文件中添加以下内容：
+        1.在transportConnector标签中增肌discoveryUri="multicast://default"，如<transportConnector name="openwire" uri="tcp://0.0.0.0:61617?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600" discoveryUri="multicast://default"/>
+        2.
+        <!-- 负载均衡-动态 -->
+        <networkConnectors>
+               <networkConnector uri="multicast://default" />
+        </networkConnectors>
+    代码在：amq-no-spring:com.suns.brokerclusterdync包下
