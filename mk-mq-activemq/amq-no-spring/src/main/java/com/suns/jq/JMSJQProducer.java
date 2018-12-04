@@ -22,7 +22,7 @@ import javax.jms.*;
  */
 public class JMSJQProducer {
 
-    public static String ACTIVEMQ_BROKERURL = "failover:(tcp://localhost:61616,tcp://localhost:61617,tcp://localhost:61618)";
+    public static String ACTIVEMQ_BROKERURL = "failover:(tcp://localhost:61616,tcp://localhost:61617,tcp://localhost:61618)?randomize=false";
     public static String ACTIVEMQ_USERNAME = ActiveMQConnection.DEFAULT_USER;/*默认连接用户名*/
     public static String ACTIVEMQ_PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD ;/*默认连接密码*/
 
