@@ -81,3 +81,13 @@ RabbitMQ使用原生客户端
         使用备用交换器，向往常一样，声明Queue和备用交换器，把Queue绑定到备用交换器上。然后在声明主交换器时，通过交换器的参数，alternate-exchange,，将备用交换器设置给主交换器。
         建议备用交换器设置为faout类型，Queue绑定时的路由键设置为“#”
         代码：详见com.suns.backupexchange
+
+5.RabbitMQ,消息消费时的权衡
+    5.1消息的获得方式
+        5.1.1推送consume(之前的代码都是用这个方式)，如com.suns.exchange.direct
+        5.1.2拉取Get
+            属于一种轮询模型，发送一次get请求，获得一个消息。如果此时RabbitMQ中没有消息，会获得一个表示空的回复。总的来说，这种方式性能比较差，很明显，每获得一条消息，都要和RabbitMQ进行网络通信发出请求。而且对RabbitMQ来说，RabbitMQ无法进行任何优化，因为它永远不知道应用程序何时会发出请求。对我们实现者来说，要在一个循环里，不断去服务器get消息
+            生产者：不变
+            消费者：由原来的new DefaultConsumer()及channel.basicConsume()，改为channel.basicGet()
+            代码：详见com.suns.getmessage
+
