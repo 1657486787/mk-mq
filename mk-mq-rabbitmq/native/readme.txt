@@ -32,3 +32,24 @@ RabbitMQ使用原生客户端
         通配符*和# 与ActiveMQ的通配符订阅类似
         "*" 用于匹配路径上的任何名字    "#" 用于递归地匹配任何字符
         代码：详见com.suns.exchange.topic
+
+4.RabbitMQ,消息发布时的权衡
+    （性能）快，（消息可靠性）低<-------------------------------------------------------------------------->（性能）慢，（消息可靠性）高
+    无保障，失败通知，发布者确认，备用交换器，高可用队列，事务，事务+高可用队列，消息的持久化
+    4.1无保障
+    4.2失败通知
+        代码：详见com.suns.exchange.mandatory
+        生产者：MandatoryProducer中增加
+            //失败通知
+            channel.addReturnListener(new ReturnListener() {
+                @Override
+                public void handleReturn(int replyCode, String replyText, String exchange, String routingKey, AMQP.BasicProperties properties, byte[] body) throws IOException {
+                    String msg = new String(body,"UTF-8");
+                    System.out.println("replyCode["+replyCode+"],replyText["+replyText+"],exchange["+exchange+"],routingKey["+routingKey+"],body["+msg+"]");
+                }
+            });
+            //设置mandatory为true
+            channel.basicPublish(exchange_name,routKey,true,null,message.getBytes());
+            System.out.println("send 路由键["+routKey+"] msg:"+message);
+            Thread.sleep(200);//休眠，为了有足够时间监听channel.addReturnListener
+        消费者：MandatoryConsume不需要改动
