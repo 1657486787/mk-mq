@@ -54,6 +54,20 @@ RabbitMQ使用原生客户端
             Thread.sleep(200);//休眠，为了有足够时间监听channel.addReturnListener
         消费者：MandatoryConsume不需要改动
     4.3事务
+        事务的实现主要是对信道（Channel）的设置，主要的方法有三个：
+        1.	channel.txSelect()声明启动事务模式；
+        2.	channel.txComment()提交事务；
+        3.	channel.txRollback()回滚事务；
+        在发送消息之前，需要声明channel为事务模式，提交或者回滚事务即可。
+        开启事务后，客户端和RabbitMQ之间的通讯交互流程：
+            客户端发送给服务器Tx.Select(开启事务模式)
+            服务器端返回Tx.Select-Ok（开启事务模式ok）
+            推送消息
+            客户端发送给事务提交Tx.Commit
+            服务器端返回Tx.Commit-Ok
+        以上就完成了事务的交互流程，如果其中任意一个环节出现问题，就会抛出IoException移除，这样用户就可以拦截异常进行事务回滚，或决定要不要重复消息。
+        那么，既然已经有事务了，为何还要使用发送方确认模式呢，原因是因为事务的性能是非常差的。根据相关资料，事务会降低2~10倍的性能
+        代码：详见com.suns.transaction
     4.4发布者确认
         启用消息确认模式：channel.confirmSelect();
         Confirm的三种实现方式：

@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e786fcc3-2757-4e03-b166-76f0521b4b0e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerBatchConfirm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirmAsync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirmConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/transaction/ConsumerProducerTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/transaction/ProducerTransaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,20 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MandatoryProducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/mandatory/MandatoryProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#941#1390#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProducerConfirm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirm.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,8 +104,44 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+            <state relative-caret-position="355">
+              <caret line="66" column="30" lean-forward="true" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProducerTransaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/transaction/ProducerTransaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/DirectProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsumerProducerTransaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/transaction/ConsumerProducerTransaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,24 +151,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
               <caret line="1319" column="10" selection-start-line="1319" selection-start-column="10" selection-end-line="1319" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutorecoveringChannel.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../springboot/mq/rabbitmq/amqp-client-5.1.2-sources.jar!/com/rabbitmq/client/impl/recovery/AutorecoveringChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="691" column="31" selection-start-line="691" selection-start-column="31" selection-end-line="691" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChannelN.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../springboot/mq/rabbitmq/amqp-client-5.1.2-sources.jar!/com/rabbitmq/client/impl/ChannelN.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="194" column="19" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -187,8 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mk-mq-activemq/delayOrder/src/test/java/com/suns/AppTest.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/delayOrder/src/test/java/com/suns/jdk/delayqueue/DelayQueueTest.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/delayOrder/src/main/java/com/suns/service/delay/IDelayOrder.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/delayOrder/src/main/java/com/suns/service/busi/DlyOrderProcess.java" />
         <option value="$PROJECT_DIR$/mk-mq-activemq/delayOrder/src/main/java/com/suns/vo/ItemVo.java" />
@@ -237,6 +237,8 @@
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirm.java" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirmAsync.java" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirmConsumer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/transaction/ConsumerProducerTransaction.java" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/transaction/ProducerTransaction.java" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt" />
       </list>
     </option>
@@ -350,6 +352,38 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="producerconfirm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="ConsumerProducerTransaction" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="ProducerTransaction" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
@@ -479,25 +513,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProducerConfirmAsync">
-    <configuration name="MandatoryProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.mandatory.MandatoryProducer" />
+  <component name="RunManager" selected="Application.ConsumerProducerTransaction">
+    <configuration name="ConsumerProducerTransaction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.transaction.ConsumerProducerTransaction" />
       <module name="native" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.mandatory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="ProducerBatchConfirm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.producerconfirm.ProducerBatchConfirm" />
-      <module name="native" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.suns.producerconfirm.*" />
+          <option name="PATTERN" value="com.suns.transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -531,6 +554,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.suns.producerconfirm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="ProducerTransaction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.transaction.ProducerTransaction" />
+      <module name="native" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.suns.transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -881,19 +915,19 @@
       <item itemvalue="Tomcat Server.asyncApp" />
       <item itemvalue="Tomcat Server.amq-spring-provider" />
       <item itemvalue="Tomcat Server.amq-spring-consumer" />
-      <item itemvalue="Application.MandatoryProducer" />
       <item itemvalue="Application.ProducerConfirm" />
       <item itemvalue="Application.ProducerConfirmConsumer" />
-      <item itemvalue="Application.ProducerBatchConfirm" />
       <item itemvalue="Application.ProducerConfirmAsync" />
+      <item itemvalue="Application.ConsumerProducerTransaction" />
+      <item itemvalue="Application.ProducerTransaction" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProducerTransaction" />
+        <item itemvalue="Application.ConsumerProducerTransaction" />
         <item itemvalue="Application.ProducerConfirmAsync" />
         <item itemvalue="Application.ProducerConfirmConsumer" />
         <item itemvalue="Application.ProducerConfirm" />
-        <item itemvalue="Application.ProducerBatchConfirm" />
-        <item itemvalue="Application.MandatoryProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -912,7 +946,7 @@
       <workItem from="1543200083318" duration="3018000" />
       <workItem from="1543311655614" duration="24257000" />
       <workItem from="1543543166664" duration="22027000" />
-      <workItem from="1543807549124" duration="46030000" />
+      <workItem from="1543807549124" duration="46501000" />
     </task>
     <servers />
   </component>
@@ -949,7 +983,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160953000" />
+    <option name="totallyTimeSpent" value="161424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -976,7 +1010,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33221477" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2997763" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
@@ -1079,20 +1113,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/brokerclusterdync/consumer/DynBc2Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/brokerclusterdync/consumer/DynBcConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/brokerclusterdync/producer/DynBc2Producer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1397,16 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/DirectProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/NormalConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
@@ -1506,10 +1516,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/DirectProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/transaction/ConsumerProducerTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/transaction/ProducerTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+        <state relative-caret-position="355">
+          <caret line="66" column="30" lean-forward="true" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
         </state>
       </provider>
     </entry>
