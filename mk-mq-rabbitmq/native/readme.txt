@@ -53,3 +53,11 @@ RabbitMQ使用原生客户端
             System.out.println("send 路由键["+routKey+"] msg:"+message);
             Thread.sleep(200);//休眠，为了有足够时间监听channel.addReturnListener
         消费者：MandatoryConsume不需要改动
+    4.3事务
+    4.4发布者确认
+        启用消息确认模式：channel.confirmSelect();
+        Confirm的三种实现方式：
+        方式一：channel.waitForConfirms()普通发送方确认模式；消息到达交换器，就会返回true。
+        方式二：channel.waitForConfirmsOrDie()批量确认模式；使用同步方式等所有的消息发送之后才会执行后面代码，只要有一个消息未到达交换器就会抛出IOException异常。
+        方式三：channel.addConfirmListener()异步监听发送方确认模式；
+        代码：详见com.suns.producerconfirm
