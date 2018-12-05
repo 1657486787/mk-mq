@@ -23,5 +23,10 @@ RabbitMQ使用原生客户端
             MulitConsumerOneQueue：一个队列多个消费者，则会表现出消息在消费者之间的轮询发送
     4.2Fanout
         消息广播到绑定的队列
+        代码：详见com.suns.exchange.fanout
+            FanoutProducer:生产者,1.设置exchange的类型为BuiltinExchangeType.FANOUT,2.设置三种路由键error,info,warning
+            Consumer1:消费者,1.设置exchange的类型为BuiltinExchangeType.FANOUT,2.设置三种路由键error,info,warning
+            Consumer2:消费者,1.设置exchange的类型为BuiltinExchangeType.FANOUT,2.设置一种路由键error（或者一个不存在的路由键）
+            结果：生产者发送三种路由键error,info,warning，每种一条消息，Consumer1和Consumer2 都能受到
     4.3Topic
 
