@@ -75,3 +75,9 @@ RabbitMQ使用原生客户端
         方式二：channel.waitForConfirmsOrDie()批量确认模式；使用同步方式等所有的消息发送之后才会执行后面代码，只要有一个消息未到达交换器就会抛出IOException异常。
         方式三：channel.addConfirmListener()异步监听发送方确认模式；
         代码：详见com.suns.producerconfirm
+    4.5备用交换器
+        在第一次声明交换器时被指定，用来提供一种预先存在的交换器，如果主交换器无法路由消息，那么消息将被路由到这个新的备用交换器。
+        如果发布消息时同时设置了mandatory会发生什么？如果主交换器无法路由消息，RabbitMQ并不会通知发布者，因为，向备用交换器发送消息，表示消息已经被路由了。注意，新的备用交换器就是普通的交换器，没有任何特殊的地方。
+        使用备用交换器，向往常一样，声明Queue和备用交换器，把Queue绑定到备用交换器上。然后在声明主交换器时，通过交换器的参数，alternate-exchange,，将备用交换器设置给主交换器。
+        建议备用交换器设置为faout类型，Queue绑定时的路由键设置为“#”
+        代码：详见com.suns.backupexchange
