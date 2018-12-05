@@ -29,4 +29,6 @@ RabbitMQ使用原生客户端
             Consumer2:消费者,1.设置exchange的类型为BuiltinExchangeType.FANOUT,2.设置一种路由键error（或者一个不存在的路由键）
             结果：生产者发送三种路由键error,info,warning，每种一条消息，Consumer1和Consumer2 都能受到
     4.3Topic
-
+        通配符*和# 与ActiveMQ的通配符订阅类似
+        "*" 用于匹配路径上的任何名字    "#" 用于递归地匹配任何字符
+        代码：详见com.suns.exchange.topic
