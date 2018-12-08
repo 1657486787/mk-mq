@@ -7,11 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e786fcc3-2757-4e03-b166-76f0521b4b0e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectRequeueConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessOtherConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessWarnConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/WillMakeDlxConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/WillMakeWarnDlxConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerA.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerB.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectRequeueConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectRequeueConsumer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,6 +45,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DlxProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WillMakeWarnDlxConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/WillMakeWarnDlxConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DlxProcessWarnConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessWarnConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DlxProcessOtherConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessOtherConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WillMakeDlxConsumer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/WillMakeDlxConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="43" column="57" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DlxProcessConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NormalConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/NormalConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RejectProducer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectProducer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,80 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NormalConsumerA.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProducerConfirm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProducerConfirmAsync.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/producerconfirm/ProducerConfirmAsync.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NormalConsumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/NormalConsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NormalConsumerB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RejectRequeueConsumer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectRequeueConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="54" column="78" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="54" selection-end-column="78" />
+            <state relative-caret-position="352">
+              <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,20 +153,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Channel.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../../springboot/mq/rabbitmq/amqp-client-5.1.2-sources.jar!/com/rabbitmq/client/Channel.java">
+      <file leaf-file-name="DirectProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/DirectProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="772" column="9" selection-start-line="772" selection-start-column="9" selection-end-line="772" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+            <state relative-caret-position="69">
+              <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,12 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/brokerclusterdync/producer/DynBc2Producer.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/brokerclusterdync/consumer/DynBcConsumer.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/brokerclusterdync/consumer/DynBc2Consumer.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/brokercluster/consumer/BcOC2Consumer.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/brokercluster/consumer/BcOCConsumer.java" />
-        <option value="$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/studyfromgw/Send.java" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/studyfromgw/package-info.java" />
@@ -232,10 +240,16 @@
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/NormalConsumer.java" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerA2.java" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectProducer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerA.java" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerB.java" />
         <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectRequeueConsumer.java" />
-        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProducer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessConsumer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/WillMakeDlxConsumer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/WillMakeWarnDlxConsumer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessWarnConsumer.java" />
+        <option value="$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessOtherConsumer.java" />
       </list>
     </option>
   </component>
@@ -348,6 +362,49 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dlx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dlx" type="462c0819:PsiDirectoryNode" />
+              <item name="DlxProcessConsumer" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dlx" type="462c0819:PsiDirectoryNode" />
+              <item name="DlxProcessOtherConsumer" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dlx" type="462c0819:PsiDirectoryNode" />
+              <item name="DlxProcessWarnConsumer" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
+              <item name="mk-mq-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rejectmsg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -448,58 +505,58 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RejectProducer">
-    <configuration name="NormalConsumerA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.rejectmsg.NormalConsumerA" />
+  <component name="RunManager" selected="Application.DlxProducer">
+    <configuration name="DlxProcessConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.dlx.DlxProcessConsumer" />
       <module name="native" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.rejectmsg.*" />
+          <option name="PATTERN" value="com.suns.dlx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="NormalConsumerA2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.rejectmsg.NormalConsumerA2" />
+    <configuration name="DlxProcessOtherConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.dlx.DlxProcessOtherConsumer" />
       <module name="native" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.rejectmsg.*" />
+          <option name="PATTERN" value="com.suns.dlx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="NormalConsumerB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.rejectmsg.NormalConsumerB" />
+    <configuration name="DlxProcessWarnConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.dlx.DlxProcessWarnConsumer" />
       <module name="native" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.rejectmsg.*" />
+          <option name="PATTERN" value="com.suns.dlx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="RejectProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.rejectmsg.RejectProducer" />
+    <configuration name="DlxProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.dlx.DlxProducer" />
       <module name="native" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.rejectmsg.*" />
+          <option name="PATTERN" value="com.suns.dlx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="RejectRequeueConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.suns.rejectmsg.RejectRequeueConsumer" />
+    <configuration name="WillMakeWarnDlxConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.suns.dlx.WillMakeWarnDlxConsumer" />
       <module name="native" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.suns.rejectmsg.*" />
+          <option name="PATTERN" value="com.suns.dlx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -850,19 +907,19 @@
       <item itemvalue="Tomcat Server.asyncApp" />
       <item itemvalue="Tomcat Server.amq-spring-provider" />
       <item itemvalue="Tomcat Server.amq-spring-consumer" />
-      <item itemvalue="Application.RejectProducer" />
-      <item itemvalue="Application.NormalConsumerA" />
-      <item itemvalue="Application.NormalConsumerA2" />
-      <item itemvalue="Application.NormalConsumerB" />
-      <item itemvalue="Application.RejectRequeueConsumer" />
+      <item itemvalue="Application.DlxProcessConsumer" />
+      <item itemvalue="Application.DlxProcessWarnConsumer" />
+      <item itemvalue="Application.WillMakeWarnDlxConsumer" />
+      <item itemvalue="Application.DlxProcessOtherConsumer" />
+      <item itemvalue="Application.DlxProducer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RejectProducer" />
-        <item itemvalue="Application.RejectRequeueConsumer" />
-        <item itemvalue="Application.NormalConsumerB" />
-        <item itemvalue="Application.NormalConsumerA" />
-        <item itemvalue="Application.NormalConsumerA2" />
+        <item itemvalue="Application.DlxProducer" />
+        <item itemvalue="Application.DlxProcessOtherConsumer" />
+        <item itemvalue="Application.DlxProcessWarnConsumer" />
+        <item itemvalue="Application.DlxProcessConsumer" />
+        <item itemvalue="Application.WillMakeWarnDlxConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -881,7 +938,7 @@
       <workItem from="1543200083318" duration="3018000" />
       <workItem from="1543311655614" duration="24257000" />
       <workItem from="1543543166664" duration="22027000" />
-      <workItem from="1543807549124" duration="61166000" />
+      <workItem from="1543807549124" duration="64341000" />
     </task>
     <servers />
   </component>
@@ -918,7 +975,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176089000" />
+    <option name="totallyTimeSpent" value="179264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -927,7 +984,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.37248322" />
-      <window_info anchor="right" id="Maven Projects" order="3" sideWeight="0.49929875" visible="true" weight="0.16684435" />
+      <window_info anchor="right" id="Maven Projects" order="3" sideWeight="0.49828768" visible="true" weight="0.16684435" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="4" />
       <window_info id="Capture Tool" order="2" />
@@ -945,8 +1002,8 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20246086" />
-      <window_info anchor="right" id="Coverage" order="3" sideWeight="0.50070125" side_tool="true" visible="true" weight="0.16684435" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34675616" />
+      <window_info anchor="right" id="Coverage" order="3" sideWeight="0.5017123" side_tool="true" visible="true" weight="0.16684435" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
@@ -1048,54 +1105,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/topic/AConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/topic/OrderConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="278" column="37" selection-start-line="276" selection-start-column="4" selection-end-line="278" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Override.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/topic/EmalConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1397,16 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/DirectProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/MulitBindConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1421,16 +1420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/NormalConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1461,10 +1450,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../springboot/mq/rabbitmq/amqp-client-5.1.2-sources.jar!/com/rabbitmq/client/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="772" column="9" selection-start-line="772" selection-start-column="9" selection-end-line="772" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="123" column="10" lean-forward="true" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+        <state relative-caret-position="418">
+          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1481,37 +1494,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/NormalConsumerA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../springboot/mq/rabbitmq/amqp-client-5.1.2-sources.jar!/com/rabbitmq/client/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="772" column="9" selection-start-line="772" selection-start-column="9" selection-end-line="772" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/rejectmsg/RejectRequeueConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="54" column="78" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="54" selection-end-column="78" />
+        <state relative-caret-position="352">
+          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/readme.txt">
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/NormalConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/exchange/direct/DirectProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/WillMakeWarnDlxConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessWarnConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/DlxProcessOtherConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
-          <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+          <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-rabbitmq/native/src/main/java/com/suns/dlx/WillMakeDlxConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="43" column="57" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

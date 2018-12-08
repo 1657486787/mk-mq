@@ -30,14 +30,14 @@ public class NormalConsumerA {
         /*创建信道*/
         final Channel channel = connection.createChannel();
         /*创建交换器*/
-        channel.exchangeDeclare(DirectProducer.EXCHANGE_NAME,BuiltinExchangeType.DIRECT);
+        channel.exchangeDeclare(RejectProducer.EXCHANGE_NAME,BuiltinExchangeType.DIRECT);
 
         /*声明一个队列*/
         final String queueName = "focuserror";
         channel.queueDeclare(queueName,false,false, false,null);
         /*绑定，将队列和交换器通过路由键进行绑定*/
         String routekey = "error";/*表示只关注error级别的日志消息*/
-        channel.queueBind(queueName,DirectProducer.EXCHANGE_NAME,routekey);
+        channel.queueBind(queueName,RejectProducer.EXCHANGE_NAME,routekey);
 
         System.out.println("waiting for message........");
 
