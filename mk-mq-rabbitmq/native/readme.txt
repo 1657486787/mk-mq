@@ -100,4 +100,20 @@ RabbitMQ使用原生客户端
              通过运行程序，启动两个消费者A、B，都可以收到消息，但是其中有一个消费者A不会对消息进行确认，当把这个消费者A关闭后，消费者B又会收到本来发送给消费者A的消息。所以我们一般使用手动确认的方法是，将消息的处理放在try/catch语句块中，成功处理了，就给RabbitMQ一个确认应答，如果处理异常了，就在catch中，进行消息的拒绝，如何拒绝，参考《消息的拒绝》章节
         代码：详见com.suns.ackfalse
 
+    5.3消息的拒绝
+        Reject和Nack
+        消息确认可以让RabbitMQ知道消费者已经接受并处理完消息。但是如果消息本身或者消息的处理过程出现问题怎么办？需要一种机制，通知RabbitMQ，这个消息，我无法处理，请让别的消费者处理。这里就有两种机制，Reject和Nack。
+        Reject在拒绝消息时，可以使用requeue标识，告诉RabbitMQ是否需要重新发送给别的消费者。不重新发送，一般这个消息就会被RabbitMQ丢弃。Reject一次只能拒绝一条消息。
+        Nack则可以一次性拒绝多个消息。这是RabbitMQ对AMQP规范的一个扩展。
+        生产者：RejectProducer，和普通的一样发十条路由键为error的消息
+        消费者：NormalComsumerA，消息队列为focuserror，绑定路由键为error。采用手工确认消息机制channel.basicConsume(queueName,false,consumer);
+        消费者：NormalComsumerB，消息队列为focuserror，绑定路由键为error。采用手工确认消息机制channel.basicConsume(queueName,false,consumer);
+        消费者：RejectRequeueConsumer，消息队列为focuserror，绑定路由键为error。采用手工确认消息机制channel.basicConsume(queueName,false,consumer); 手工抛异常
+        通过RejectRequeuConsumer可以看到当requeue参数设置为true时，消息发生了重新投递，如果设置为false,那么就不会进行重新投递。
+
+        reject和nack用法一样
+         channel.basicReject(envelope.getDeliveryTag(),false);
+         channel.basicNack(envelope.getDeliveryTag(),false,true);
+
+        代码：详见com.suns.rejectmsg
 
