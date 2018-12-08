@@ -194,4 +194,8 @@ RabbitMQ使用原生客户端
     7.7消息的持久化
         默认情况下，队列和交换器在服务器重启后都会消失，消息当然也是。将队列和交换器的durable属性设为true，缺省为false，但是消息要持久化还不够，还需要将消息在发布前，将投递模式设置为2。消息要持久化，必须要有持久化的队列、交换器和投递模式都为2。
         消息属性的设置方法，包括如何将消息的持久化
+        消息的持久化必须 设置交换器，队列都为持久化才行，三者缺一不可
+        channel.exchangeDeclare(EXCHANGE_NAME,BuiltinExchangeType.DIRECT,true);
+        channel.queueDeclare(queueName,true,false, false,null);
+        channel.basicPublish(EXCHANGE_NAME,servieity,MessageProperties.PERSISTENT_TEXT_PLAIN,message.getBytes());
         代码：详见com.suns.setmsg.MsgDurable中
