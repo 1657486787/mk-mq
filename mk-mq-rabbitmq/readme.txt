@@ -74,5 +74,7 @@ RabbitMQ
         虚拟消息服务器，vhost，本质上就是一个mini版的mq服务器，有自己的队列、交换器和绑定，最重要的，自己的权限机制。Vhost提供了逻辑上的分离，可以将众多客户端进行区分，又可以避免队列和交换器的命名冲突。Vhost必须在连接时指定，rabbitmq包含缺省vhost：“/”，通过缺省用户和口令guest进行访问。
         rabbitmq里创建用户，必须要被指派给至少一个vhost，并且只能访问被指派内的队列、交换器和绑定。Vhost必须通过rabbitmq的管理控制工具创建
 
-3.使用：使用原生客户端
-    原生客户端：详见项目native
+3.使用：
+    3.1原生客户端：详见项目native
+    3.2RabbitMQ与spring整合
+        详见rmq-spring-produder,rmq-spring-consumer

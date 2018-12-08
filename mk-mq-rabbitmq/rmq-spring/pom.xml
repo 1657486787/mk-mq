@@ -3,29 +3,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>mk-mq</artifactId>
+        <artifactId>mk-mq-rabbitmq</artifactId>
         <groupId>com.suns</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.suns</groupId>
-    <artifactId>mk-mq-rabbitmq</artifactId>
+    <artifactId>rmq-spring</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>native</module>
-        <module>rmq-spring</module>
+        <module>rmq-spring-producer</module>
+        <module>rmq-spring-consumer</module>
     </modules>
 
-    <name>mk-mq-rabbitmq</name>
+    <name>rmq-spring</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
 
 </project>

@@ -7,6 +7,8 @@
     <file type="web" url="file://$PROJECT_DIR$/mk-mq-activemq/asyncApp" />
     <file type="web" url="file://$PROJECT_DIR$/mk-mq-activemq/delayOrder" />
     <file type="web" url="file://$PROJECT_DIR$/mk-mq-rabbitmq/native" />
+    <file type="web" url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rmq-spring/rmq-spring-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rmq-spring/rmq-spring-producer" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
