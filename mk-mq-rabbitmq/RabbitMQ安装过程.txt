@@ -69,4 +69,95 @@ rm -rf /var/cache/yum/x86_64/6/epel/
 2.重新执行上面的安装过程，或者一键执行yum install erlang rabbitmq-server.noarch
 
 
+###############################管理RabbitMQ 开始#######################################
+1.RabbitMQ常用端口
+    client端口：5672
+    管理端口：15672
+    server间内部通信端口：25672
+2.可能出现的问题
+    如端口出现不能访问，考虑是否防火墙问题，可以使用形如以下命令开启或直接关闭防火墙：
+    firewall-cmd --add-port=15672/tcp --permanent
+    运行rabbitmqctl status出现Error: unable to connect to node rabbit@controller: nodedown之类问题考虑如下几种解决办法：
+    1、重启服务
+    service rabbitmq-server stop
+    service rabbitmq-server start
+    2、检查/var/lib/rabbitmq中是否存在.erlang.cookie，没有则新建一个，里面随便输入一段字符串
+    3、重新安装服务
+    4、百度或者Google一下
+3.日志一般存储位置
+    /var/log/rabbitmq/rabbit@centosvm.log
+    /var/log/rabbitmq/rabbit@centosvm-sasl.log
+4.管理虚拟主机
+    rabbitmqctl add_vhost[vhost_name]
+    rabbitmqctl list_vhost
+5.启动和关闭RabbitMQ
+    5.1以服务方式
+        service rabbitmq-server start
+        service rabbitmq-server stop
+        service rabbitmq-server status
+    5.2以应用程序方式
+        rabbitmq-server     会启动erlang节点和rabbitmq应用
+        rabbitmqctl stop    会关闭erlang节点和rabbitmq应用
+        rabbitmqctl status  可以检查消息节点是否正常
+        Rabbitmq配置文件放在 /etc/rabbitmq 下，名为rabbitmq.config，没有且需要使用则可以自己新建一个
+    5.3单独关闭RabbitMQ应用
+        rabbitmqctl stop_app关闭Rabbitmq应用
+        rabbitmqctl start_app启动Rabbitmq应用
+6.用户管理
+    rabbitmqctl add_user [username] [pwd]
+    rabbitmqctl delete_user [username]
+    rabbitmqctl  change_password  Username  Newpassword
+    rabbitmqctl  list_users
+
+7.用户权限控制
+    7.1guest用户
+        guest是默认用户，具有默认virtual host "/"上的全部权限，仅能通过localhost访问RabbitMQ包括Plugin，建议删除或更改密码。可通过将配置文件中loopback_users来取消其本地访问的限制：[{rabbit, [{loopback_users, []}]}]
+    7.2用户权限
+        用户仅能对其所能访问的virtual hosts中的资源进行操作。这里的资源指的是virtual hosts中的exchanges、queues等，操作包括对资源进行配置、写、读。配置权限可创建、删除、资源并修改资源的行为，写权限可向资源发送消息，读权限从资源获取消息。比如：
+        exchange和queue的declare与delete分别需要：exchange和queue上的配置权限
+        queue的bind与unbind需要：queue写权限，exchange的读权限
+        发消息(publish)需exchange的写权限
+        获取或清除(get、consume、purge)消息需queue的读权限
+        对何种资源具有配置、写、读的权限通过正则表达式来匹配，具体命令如下：
+        rabbitmqctl set_permissions [-p <vhostpath>] <user> <conf> <write> <read>
+        如用户Mark在虚拟主机logHost上的所有权限：
+        rabbitmqctl set_permissions –p logHost Mark  '.*'  '.*'  '.*'
+
+8.设置用户角色
+    rabbitmqctl  set_user_tags  User  Tag
+    User为用户名， Tag为角色名(对应于下面的administrator，monitoring，policymaker，management)
+    RabbitMQ的用户角色分类：none、management、policymaker、monitoring、administrator
+        none
+            不能访问 management plugin，通常就是普通的生产者和消费者
+        management
+            普通的生产者和消费者加：
+            列出自己可以通过AMQP登入的virtual hosts
+            查看自己的virtual hosts中的queues, exchanges 和 bindings
+            查看和关闭自己的channels 和 connections
+            查看有关自己的virtual hosts的“全局”的统计信息，包含其他用户在这些virtual hosts中的活动。
+        policymaker
+            management可以做的任何事加：
+            查看、创建和删除自己的virtual hosts所属的policies和parameters
+        monitoring
+            management可以做的任何事加：
+            列出所有virtual hosts，包括他们不能登录的virtual hosts
+            查看其他用户的connections和channels
+            查看节点级别的数据如clustering和memory使用情况
+            查看真正的关于所有virtual hosts的全局的统计信息
+        administrator
+            policymaker和monitoring可以做的任何事加:
+            创建和删除virtual hosts
+            查看、创建和删除users
+            查看创建和删除permissions
+            关闭其他用户的connections
+
+9.查看
+    查看队列
+    rabbitmqctl list_queues
+    查看交换器
+    rabbitmqctl list_exchanges
+    查看绑定
+    rabbitmqctl list_bindings
+
+###############################管理RabbitMQ 结束#######################################
 
