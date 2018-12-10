@@ -16,6 +16,8 @@
     <modules>
         <module>native</module>
         <module>rmq-spring</module>
+        <module>rq-order</module>
+        <module>rq-depot</module>
     </modules>
 
     <name>mk-mq-rabbitmq</name>

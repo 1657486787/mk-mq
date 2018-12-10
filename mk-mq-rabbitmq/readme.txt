@@ -78,3 +78,45 @@ RabbitMQ
     3.1原生客户端：详见项目native
     3.2RabbitMQ与spring整合
         详见rmq-spring-produder,rmq-spring-consumer
+    3.3RabbitMQ实战-应用解耦
+        详见rq-order,rq-depot（与spring整合）
+        其中rq-order对应订单服务，rq-depot对应库存服务。订单服务需要调用库存服务，当库存服务异常情况下
+        a.如果使用rpc调用，那么订单服务也会有问题，如何解决？可以使用mq
+        b.如果使用mq，那么就解耦了。但是需要做到如下几点：
+            1）订单服务发往mq的消息要发成功（发送者确认）-在生产者项目rq-order中增加如下配置
+                a.配置publisherConfirms为true
+                    <!-- 发布确认 必须配置在CachingConnectionFactory上 -->
+                    <property name="publisherConfirms" value="true"/>
+
+                b.配置returnCallback及失败通知mandatory为true及confirmCallback
+                    <!--发送者消息确认回调 -->
+                    <bean id="rabbitTemplate" class="org.springframework.amqp.rabbit.core.RabbitTemplate">
+                        <constructor-arg ref="rabbitConnectionFactory"/>
+                        <property name="mandatory" value="true"/>
+                        <property name="confirmCallback" ref="confirmCallBack"/>
+                        <property name="returnCallback" ref="returnCallBack"/>
+                    </bean>
+                c.ReturnCallBack
+                    public class ReturnCallBack implements RabbitTemplate.ReturnCallback
+                d.ConfirmCallBack
+                    public class ConfirmCallBack implements RabbitTemplate.ConfirmCallback
+            2）如果mq挂掉，重启之后，消息依然还存证（消息持久化）-在生产者项目rq-order中增加如下配置
+                a.交换器持久化
+                    <!-- 交换器持久化durable="true" -->
+                    <rabbit:direct-exchange name="depot-amount-exchange" xmlns="http://www.springframework.org/schema/rabbit" durable="true">
+                b.队列持久化
+                    <!-- 队列持久化durable="true" -->
+                    <rabbit:queue name="depot_queue" durable="true" />
+                c.消息持久化
+                     MessageProperties messageProperties = new MessageProperties();
+                     messageProperties.setDeliveryMode(MessageDeliveryMode.PERSISTENT);//消息持久化：1.消息本身需要持久化2.交换器需要持久化3.队列需要持久化，三者缺一不可
+            3）如果库存服务正在消费消息，突然挂掉等情况，怎么保存消费完了（消息的确认）-在消费者项目rq-depot中增加如下配置
+                a.消息改为手工确认
+                    <!-- 对消息要手动确认 -->
+                    <rabbit:listener-container connection-factory="rabbitConnectionFactory" acknowledge="manual">
+                        <rabbit:listener queues="depot_queue" ref="processDepot" method="onMessage"/>
+                    </rabbit:listener-container>
+                b.ProcessDepot
+                    public class ProcessDepot implements ChannelAwareMessageListener
+
+        启动两个项目，访问rq-order：http://localhost:8081/order

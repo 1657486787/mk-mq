@@ -9,6 +9,8 @@
     <file type="web" url="file://$PROJECT_DIR$/mk-mq-rabbitmq/native" />
     <file type="web" url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rmq-spring/rmq-spring-consumer" />
     <file type="web" url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rmq-spring/rmq-spring-producer" />
+    <file type="web" url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rq-depot" />
+    <file type="web" url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rq-order" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
