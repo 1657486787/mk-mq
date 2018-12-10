@@ -198,4 +198,8 @@ RabbitMQ使用原生客户端
         channel.exchangeDeclare(EXCHANGE_NAME,BuiltinExchangeType.DIRECT,true);
         channel.queueDeclare(queueName,true,false, false,null);
         channel.basicPublish(EXCHANGE_NAME,servieity,MessageProperties.PERSISTENT_TEXT_PLAIN,message.getBytes());
-        代码：详见com.suns.setmsg.MsgDurable中
+        代码：详见com.suns.durablemsg中
+
+    7.8作业：用rabbitmq实现限时订单
+        利用ttl（x-message-ttl）和死信队列（x-dead-letter-exchange）配合使用
+        代码：详见com.suns.delayorder
