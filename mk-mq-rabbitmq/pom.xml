@@ -18,6 +18,7 @@
         <module>rmq-spring</module>
         <module>rq-order</module>
         <module>rq-depot</module>
+        <module>rmq-springboot</module>
     </modules>
 
     <name>mk-mq-rabbitmq</name>

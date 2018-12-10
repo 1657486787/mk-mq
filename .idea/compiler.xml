@@ -15,6 +15,7 @@
         <module name="native" />
         <module name="rmq-spring-consumer" />
         <module name="rmq-spring-producer" />
+        <module name="rmq-springboot" />
         <module name="rq-depot" />
         <module name="rq-order" />
       </profile>

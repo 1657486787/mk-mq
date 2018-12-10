@@ -76,8 +76,22 @@ RabbitMQ
 
 3.使用：
     3.1原生客户端：详见项目native
+        jar包：
+            <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>5.1.2</version>
+            </dependency>
+
     3.2RabbitMQ与spring整合
         详见rmq-spring-produder,rmq-spring-consumer
+        jar包：
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-rabbit</artifactId>
+                <version>2.0.0.RELEASE</version>
+            </dependency>
+
     3.3RabbitMQ实战-应用解耦
         详见rq-order,rq-depot（与spring整合）
         其中rq-order对应订单服务，rq-depot对应库存服务。订单服务需要调用库存服务，当库存服务异常情况下
@@ -119,4 +133,18 @@ RabbitMQ
                 b.ProcessDepot
                     public class ProcessDepot implements ChannelAwareMessageListener
 
-        启动两个项目，访问rq-order：http://localhost:8081/order
+        启动两个项目，
+
+    3.4RabbitMQ与springBoot整合
+        详见rmq-springboot
+            jar包：
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+            </dependency>
+        访问：http://localhost:8080/rabbit/hello   或者  http://localhost:8080/rabbit/topicTest  或者  http://localhost:8080/rabbit/fanoutTest
+        控制层：RabbitTest
+        配置类：RabbitConf
+        消息生产者：DefaultSender,FanoutSender,TopicSender
+        消息接受者：HelloReceiver,UserReceiver(类上监听，需要在RabbitConf中配置),UserReceiver2(直接在方法上监听)，FanoutReceiver,TopicEmailMessageReceiver,TopicUserMessageReceiver
+

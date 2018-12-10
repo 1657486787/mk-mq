@@ -15,6 +15,7 @@
     <file url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rmq-spring" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rmq-spring/rmq-spring-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rmq-spring/rmq-spring-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rmq-springboot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rq-depot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-rabbitmq/rq-order" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
