@@ -172,5 +172,10 @@ RabbitMQ
     代码：com.suns.cluster
 
 5.RabbitMQ集群高可用
-    HAProxy + RabbitMQ集群
-    参考：RabbitMQ集群高可用.txt
+    5.1HAProxy
+    处理节点选择，故障服务器检测和负载分布可以使用HAProxy。
+    本次操作是在一台机器上搭建集群，端口分别为5672，5673,5674，使用HAProxy对外暴露的端口为5670,那么程序直接使用5670这个端口访问就可以了，真实的rabbitmq挂掉时，对用户的访问是无感知的。
+    安装参考：HAProxy高可用安装.txt
+    代码：com.suns.haproxy
+
+    5.2HAProxy + RabbitMQ集群

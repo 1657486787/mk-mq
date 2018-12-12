@@ -1,0 +1,37 @@
+RabbitMQ集群高可用
+    镜像队列
+    什么是镜像队列
+        如果RabbitMQ集群是由多个broker节点构成的，那么从服务的整体可用性上来讲，该集群对于单点失效是有弹性的，但是同时也需要注意：尽管exchange和binding能够在单点失效问题上幸免于难，但是queue和其上持有的message却不行，这是因为queue及其内容仅仅存储于单个节点之上，所以一个节点的失效表现为其对应的queue不可用。
+        引入RabbitMQ的镜像队列机制，将queue镜像到cluster中其他的节点之上。在该实现下，如果集群中的一个节点失效了，queue能自动地切换到镜像中的另一个节点以保证服务的可用性。在通常的用法中，针对每一个镜像队列都包含一个master和多个slave，分别对应于不同的节点。slave会准确地按照master执行命令的顺序进行命令执行，故slave与master上维护的状态应该是相同的。除了publish外所有动作都只会向master发送，然后由master将命令执行的结果广播给slave们，故看似从镜像队列中的消费操作实际上是在master上执行的。
+        RabbitMQ的镜像队列同时支持publisher confirm和事务两种机制。在事务机制中，只有当前事务在全部镜像queue中执行之后，客户端才会收到Tx.CommitOk的消息。同样的，在publisher confirm机制中，向publisher进行当前message确认的前提是该message被全部镜像所接受了。
+    镜像队列的配置
+        代码
+        Map<String, Object> args = new HashMap<String, Object>();
+        args.put("x-ha-policy", "all");
+        在声明队列时传入channel.queueDeclare(queueName,false,false, false, args);
+    控制台
+        镜像队列的配置通过添加policy完成，policy添加的命令为：
+        rabbitmqctl set_policy [-p Vhost] Name Pattern Definition [Priority]
+        -p Vhost： 可选参数，针对指定vhost下的queue进行设置
+        Name: policy的名称
+        Pattern: queue的匹配模式(正则表达式)
+        Definition：镜像定义，包括三个部分ha-mode, ha-params, ha-sync-mode
+            ha-mode:指明镜像队列的模式，有效值为 all/exactly/nodes
+                all：表示在集群中所有的节点上进行镜像
+                exactly：表示在指定个数的节点上进行镜像，节点的个数由ha-params指定
+                nodes：表示在指定的节点上进行镜像，节点名称通过ha-params指定
+            ha-params：ha-mode模式需要用到的参数
+            ha-sync-mode：进行队列中消息的同步方式，有效值为automatic和manual
+        priority：可选参数，policy的优先级
+        例如，对队列名称以“queue_”开头的所有队列进行镜像，并在集群的两个节点上完成进行，policy的设置命令为：
+        rabbitmqctl set_policy ha-queue-two "^queue_" '{"ha-mode":"exactly","ha-params":2,"ha-sync-mode":"automatic"}'
+        windows下将单引号改为双引号(rabbitmqctl set_policy ha-all “^ha.” “{“”ha-mode”“:”“all”“}”)
+    补充：
+        可通过如下命令确认哪些salve在同步：
+            rabbitmqctl list_queues name slave_pids synchronised_slave_pids
+        手动同步queue：
+            rabbitmqctl sync_queue name
+        取消queue同步：
+            rabbitmqctl cancel_sync_queue name
+        使用HAProxy
+    处理节点选择，故障服务器检测和负载分布可以使用HAProxy，具体如何安装，参考文档《HAProxy高可用安装》
