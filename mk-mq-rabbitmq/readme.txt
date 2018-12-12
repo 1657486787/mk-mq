@@ -148,3 +148,29 @@ RabbitMQ
         消息生产者：DefaultSender,FanoutSender,TopicSender
         消息接受者：HelloReceiver,UserReceiver(类上监听，需要在RabbitConf中配置),UserReceiver2(直接在方法上监听)，FanoutReceiver,TopicEmailMessageReceiver,TopicUserMessageReceiver
 
+4.RabbitMQ集群
+    本机集群：一台机器上搭建集群，只需要一个RabbitMQ软件，通过制定不同端口运行不同的实例
+    多机集群：在不同机器上运行RabbitMQ
+    参考：RabbitMQ集群安装.txt
+
+    1.本次操作是在一台机器上搭建集群，端口分别为5672，5673,5674
+
+    2.新增虚拟主机及用户
+        1.新建虚拟主机（如：名称为vhost001）
+            rabbitmqctl add_vhost vhost001
+            查看：rabbitmqctl list_vhosts vhost00
+        2.新建用户（如：名称为user001,密码为123456）
+            rabbitmqctl add_user user001 123456
+            查看：rabbitmqctl list_users
+        3.给用户设置用户权限（指的是用户给哪个虚拟主机设置权限）
+            rabbitmqctl set_permissions -p vhost001 user001 '.*' '.*' '.*'
+        4.给用户设置用户角色(user为用户名， Tag为角色名：administrator，monitoring，policymaker，management)
+            rabbitmqctl set_user_tags user001 administrato
+    3.测试direct及fanout
+        发现fanout类型的消费者也会分摊消息
+
+    代码：com.suns.cluster
+
+5.RabbitMQ集群高可用
+    HAProxy + RabbitMQ集群
+    参考：RabbitMQ集群高可用.txt

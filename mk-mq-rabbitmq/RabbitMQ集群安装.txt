@@ -1,0 +1,65 @@
+RabbitMQ集群安装
+    要么是内存节点，要么是磁盘节点。怎么区分？就是节点将队列、交换器、用户等等信息保存在哪里？单节点肯定是磁盘类型。集群中可以有内存节点，为了性能的考虑，全部是磁盘节点，当声明队列、交换器等等时，rabbitmq必须将数据保存在所有节点后才能表示操作完成。
+    Rabbitmq只要求集群中至少有一个磁盘节点，从高可用的角度讲每个集群应该至少配备两个磁盘节点。因为只有一个磁盘节点的情况下，当这个磁盘节点崩溃时，集群可以保持运行，但任何修改操作，比如创建队列、交换器、添加和删除集群节点都无法进行。
+    构建我们自己的集群
+    集群常用命令
+        rabbitmqctl join_cluster [rabbit@node1]将节点加入集群
+        rabbitmqctl cluster_status 查询集群状态
+        rabbitmqctl reset 严格来说，不属于集群命令，reset的作用是将node节点恢复为空白状态，包括但不限于，比如，用户信息，虚拟主机信息，所有持久化的消息。在集群下，通过这个命令，可以让节点离开集群。
+    集群下的注意事项
+        元数据的变更，我们知道，这些消息都要记录在磁盘节点上。当有节点离开集群时，所有的磁盘节点上都要记录这个信息。如果磁盘节点在离开集群时不用reset命令，会导致集群认为该节点发生了故障，并会一直等待该节点恢复才允许新节点加入，所以，当磁盘节点是被暴力从集群中脱离时，有可能导致集群永久性的无法变更
+
+1.本机集群
+    注意：
+    1.本机集群指的是只有一个rabbitmq软件，但是通过不同端口运行不同的实例
+        RABBITMQ_NODE_PORT=5672 ：节点端口
+        RABBITMQ_NODENAME=rabbit：节点名称
+        RABBITMQ_SERVER_START_ARGS="-rabbitmq_management listener [{port,15673}]" ： 指定管理控制台的端口
+        @izwz93gye2rcpmatt6gssfz 指的是本机的主机名（通过hostname查看）
+    2.首先在/etc/hosts中增加
+        127.0.0.1   rabbit rabbit_1 rabbit_2
+    3.查看节点是否安装成功
+        rabbitmqctl -n rabbit_1@izwz93gye2rcpmatt6gssfz  status：查看状态
+        rabbitmqctl -n rabbit_1@izwz93gye2rcpmatt6gssfz  stop：停止节点
+        RABBITMQ_NODE_PORT=5673 RABBITMQ_SERVER_START_ARGS="-rabbitmq_management listener [{port,15673}]"  RABBITMQ_NODENAME=rabbit_1 rabbitmq-server -detached  运行某个节点
+    4.运行如下命令开始安装
+        RABBITMQ_NODE_PORT=5672 RABBITMQ_NODENAME=rabbit rabbitmq-server -detached
+        RABBITMQ_NODE_PORT=5673 RABBITMQ_SERVER_START_ARGS="-rabbitmq_management listener [{port,15673}]"  RABBITMQ_NODENAME=rabbit_1 rabbitmq-server -detached
+        RABBITMQ_NODE_PORT=5674 RABBITMQ_SERVER_START_ARGS="-rabbitmq_management listener [{port,15674}]"  RABBITMQ_NODENAME=rabbit_2 rabbitmq-server -detached
+        rabbitmqctl -n rabbit_1@izwz93gye2rcpmatt6gssfz stop_app
+        rabbitmqctl -n rabbit_1@izwz93gye2rcpmatt6gssfz reset
+        rabbitmqctl -n rabbit_1@izwz93gye2rcpmatt6gssfz join_cluster rabbit@izwz93gye2rcpmatt6gssfz
+        rabbitmqctl -n rabbit_1@izwz93gye2rcpmatt6gssfz start_app
+        rabbitmqctl cluster_status
+        rabbitmqctl -n rabbit_2@izwz93gye2rcpmatt6gssfz stop_app
+        rabbitmqctl -n rabbit_2@izwz93gye2rcpmatt6gssfz reset
+        rabbitmqctl -n rabbit_2@izwz93gye2rcpmatt6gssfz join_cluster rabbit@izwz93gye2rcpmatt6gssfz --ram
+        rabbitmqctl -n rabbit_2@izwz93gye2rcpmatt6gssfz start_app
+        rabbitmqctl cluster_status
+        从外部要访问虚拟机中的mq记得在防火墙中打开端口
+        firewall-cmd --add-port=5673/tcp --permanent
+        firewall-cmd --add-port=5674/tcp --permanent
+
+        rabbitmqctl add_user mq mq
+        rabbitmqctl set_permissions mq ".*" ".*" ".*"
+        rabbitmqctl set_user_tags mq administrator
+        rabbitmq-plugins -n rabbit_1@izwz93gye2rcpmatt6gssfz enable rabbitmq_management
+2.多机下的集群
+    Rabbitmq集群对延迟非常敏感，只能在本地局域网内使用。
+        1、	修改 /etc/hosts
+        192.168.1.1 node1
+        192.168.1.2 node2
+        192.168.1.3 node3
+    2、Erlang Cookie 文件：/var/lib/rabbitmq/.erlang.cookie。将 node1 的该文件复制到 node2、node3，由于这个文件权限是 400，所以需要先修改 node2、node3 中的该文件权限为 777，然后将 node1 中的该文件拷贝到 node2、node3，最后将权限和所属用户/组修改回来。
+    3、运行各节点
+    4、在node2、node3上分别运行
+        [root@node2 ~]# rabbitmqctl stop_app
+        [root@node2 ~]./rabbitmqctl reset
+        [root@node2 ~]# rabbitmqctl join_cluster rabbit@node1
+        [root@node2 ~]# rabbitmqctl start_app
+        rabbitmqctl cluster_status
+        内存节点则是rabbitmqctl join_cluster rabbit@node1 --ram
+    移除集群中的节点
+        [root@node2 ~]# rabbitmqctl stop_app
+        [root@node2 ~]./rabbitmqctl reset
+        [root@node2 ~]# rabbitmqctl start_app
