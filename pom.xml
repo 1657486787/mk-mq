@@ -11,6 +11,7 @@
   <modules>
     <module>mk-mq-activemq</module>
       <module>mk-mq-rabbitmq</module>
+      <module>mk-mq-kafka</module>
   </modules>
 
   <name>mk-mq</name>

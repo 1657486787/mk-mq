@@ -12,6 +12,7 @@
         <module name="amq-spring-provider" />
         <module name="asyncApp" />
         <module name="delayOrder" />
+        <module name="kafka-no-spring" />
         <module name="native" />
         <module name="rmq-spring-consumer" />
         <module name="rmq-spring-producer" />

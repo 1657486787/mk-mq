@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mk-mq</artifactId>
+        <groupId>com.suns</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.suns</groupId>
+    <artifactId>mk-mq-kafka</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>kafka-no-spring</module>
+    </modules>
+
+    <name>mk-mq-kafka</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+</project>
