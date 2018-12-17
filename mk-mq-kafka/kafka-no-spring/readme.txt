@@ -10,3 +10,8 @@ Kafka使用原生客户端
     HelloKafkaProducer:消息发送者
     HelloKafkaConsumer:消息接受者
     代码：详见包com.suns.hellokafka
+4.kafka使用
+    4.1消息的发送模式
+        发送消息拿结果：kafkaFutureProducer
+        异步获取消息:kafkaAsyncProducer
+    代码：详见包com.suns.sendtype
