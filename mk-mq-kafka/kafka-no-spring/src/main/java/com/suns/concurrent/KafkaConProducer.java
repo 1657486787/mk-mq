@@ -28,7 +28,7 @@ import java.util.concurrent.*;
  */
 public class KafkaConProducer {
 
-    private static final int MSG_SIZE = 1000;
+    private static final int MSG_SIZE = 10;
 
     public static ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
     private static CountDownLatch cdl = new CountDownLatch(MSG_SIZE);

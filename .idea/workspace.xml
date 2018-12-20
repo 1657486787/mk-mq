@@ -8,10 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e786fcc3-2757-4e03-b166-76f0521b4b0e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/config/KafkaConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/config/KafkaConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/test/java/com/suns/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/test/java/com/suns/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,12 +55,11 @@
       <file leaf-file-name="KafkaConProducer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+            <state relative-caret-position="147">
+              <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1435#2032#0" expanded="true" />
-                <element signature="e#2031#2032#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,17 +68,31 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="300">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mk-mq-kafka/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-146">
+              <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="KafkaConConsumer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+            <state relative-caret-position="152">
+              <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -102,8 +112,8 @@
       <file leaf-file-name="BusiConst.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/config/BusiConst.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="193">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -129,40 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Collections.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Collections.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87880">
-              <caret line="4787" column="30" selection-start-line="4787" selection-start-column="30" selection-end-line="4787" selection-end-column="30" />
-              <folding>
-                <element signature="e#184897#184898#0" expanded="true" />
-                <element signature="e#184949#184950#0" expanded="true" />
-                <element signature="e#186747#186748#0" expanded="true" />
-                <element signature="e#186792#186793#0" expanded="true" />
-                <element signature="e#188141#188142#0" expanded="true" />
-                <element signature="e#188201#188202#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloKafkaProducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/hellokafka/HelloKafkaProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProducerRecord.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.1/kafka-clients-0.10.1.1.jar!/org/apache/kafka/clients/producer/ProducerRecord.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="38">
+              <caret line="14" column="57" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -363,124 +344,7 @@
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="KafkaConConsumer" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="KafkaConProducer" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="BusiConst" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hellokafka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="suns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mk-mq" type="462c0819:PsiDirectoryNode" />
-              <item name="mk-mq-kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-no-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="suns" type="462c0819:PsiDirectoryNode" />
-              <item name="AppTest" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="Runtime" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="mk-mq" type="b2602c69:ProjectViewProjectNode" />
@@ -1335,7 +1199,7 @@
       <workItem from="1544403970839" duration="42449000" />
       <workItem from="1544693680096" duration="21251000" />
       <workItem from="1545095492975" duration="4445000" />
-      <workItem from="1545267356172" duration="2904000" />
+      <workItem from="1545267356172" duration="4534000" />
     </task>
     <servers />
   </component>
@@ -1372,7 +1236,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270844000" />
+    <option name="totallyTimeSpent" value="272474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1391,7 +1255,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3769575" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30089486" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.26398212" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -1399,10 +1263,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35234898" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19669509" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
       <window_info anchor="right" id="Bean Validation" order="11" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -1533,18 +1397,6 @@
           <properties />
           <option name="timeStamp" value="79" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConProducer.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConProducer.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/mk-mq-activemq/amq-no-spring/src/main/java/com/suns/compositedest/CdProducer.java</url>
           <line>24</line>
@@ -1556,11 +1408,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter/2.1.0.RELEASE/spring-boot-starter-2.1.0.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1173" />
-      </provider>
-    </entry>
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.1.0.RELEASE/spring-boot-starter-web-2.1.0.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1778,13 +1625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-kafka/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/java/util/stream/SliceOps.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1855,13 +1695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.1/kafka-clients-0.10.1.1.jar!/org/apache/kafka/clients/producer/ProducerRecord.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/config/KafkaConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1874,34 +1707,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/config/BusiConst.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="193">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConProducer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.1/kafka-clients-0.10.1.1.jar!/org/apache/kafka/clients/producer/ProducerRecord.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1435#2032#0" expanded="true" />
-            <element signature="e#2031#2032#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-kafka/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+        <state relative-caret-position="152">
+          <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/src/main/java/com/suns/concurrent/KafkaConProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1435#2032#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="300">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>

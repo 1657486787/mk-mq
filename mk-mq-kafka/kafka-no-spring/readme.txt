@@ -18,4 +18,6 @@ Kafka使用原生客户端
     4.2多线程下使用
         生产者是线程安全的,不同线程可以共用KafkaProducer
         消费者是非线程安全的，每个线程需要new KafkaConsumer
+        注意：测试消费者多线程接收消息的时候，需要手工对主题的分区进行设定个数（因为1个分区只能被一个消费者群组中的一个消费者消费），命令如下：（其中concurrenttest为主题，2为分区的个数）
+            .\kafka-topics.bat --zookeeper localhost:2181/kafka --alter --topic concurrenttest --partitions 2
         代码：详见包com.suns.concurrent
