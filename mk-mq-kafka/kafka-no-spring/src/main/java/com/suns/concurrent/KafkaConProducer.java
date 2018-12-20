@@ -28,10 +28,9 @@ import java.util.concurrent.*;
  */
 public class KafkaConProducer {
 
-    private static final int MSG_SIZE = 10000;
-    private static KafkaProducer producer = null;
+    private static final int MSG_SIZE = 1000;
 
-    public static ExecutorService executorService = Executors.newFixedThreadPool(MSG_SIZE);
+    public static ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
     private static CountDownLatch cdl = new CountDownLatch(MSG_SIZE);
 
     public static class ProduceWorker implements Runnable{
@@ -45,20 +44,26 @@ public class KafkaConProducer {
 
         @Override
         public void run() {
+
+            final String id = Thread.currentThread().getId()+"-"+System.identityHashCode(producer);
+
             producer.send(producerRecord, new Callback() {
                 @Override
                 public void onCompletion(RecordMetadata recordMetadata, Exception e) {
+
                     if (null != e) {
                         e.printStackTrace();
                     }
                     if (null != recordMetadata) {
-                        System.out.println(String.format("kafka发送消息成功！主题topic:%s,分区partition:%d,偏移量offset:%d",
+                        System.out.println(String.format(id+",kafka发送消息成功！主题topic:%s,分区partition:%d,偏移量offset:%d",
                                 recordMetadata.topic(), recordMetadata.partition(), recordMetadata.offset()));
                     }
 
-                    cdl.countDown();
                 }
             });
+
+            System.out.println(id+":数据["+producerRecord+"]已发送。");
+            cdl.countDown();
 
         }
     }
@@ -73,11 +78,11 @@ public class KafkaConProducer {
     public static void main(String[] args) {
 
         /*消息生产者*/
-        producer = new KafkaProducer(KafkaConst.producerConfig(StringSerializer.class,StringSerializer.class));
+        KafkaProducer producer = new KafkaProducer(KafkaConst.producerConfig(StringSerializer.class,StringSerializer.class));
         try {
             for(int i=0;i<MSG_SIZE;i++){
                 DemoUser demoUser = makeUser(i);
-                ProducerRecord<String,String> producerRecord = new ProducerRecord<>(BusiConst.HELLO_TOPIC,null,
+                ProducerRecord<String,String> producerRecord = new ProducerRecord<>(BusiConst.CONCURRENT_USER_INFO_TOPIC,null,
                         System.currentTimeMillis(),String.valueOf(demoUser.getId()),demoUser.toString());
                 executorService.submit(new ProduceWorker(producer,producerRecord));
             }
@@ -86,6 +91,7 @@ public class KafkaConProducer {
             e.printStackTrace();
         } finally {
             producer.close();
+            executorService.shutdown();
         }
     }
 }

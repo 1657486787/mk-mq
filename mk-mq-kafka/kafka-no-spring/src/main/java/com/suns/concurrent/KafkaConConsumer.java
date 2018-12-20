@@ -14,8 +14,11 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Collections;
+import java.util.Map;
+import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -36,8 +39,12 @@ public class KafkaConConsumer {
     public static class ConsumerWorker implements Runnable{
 
         private KafkaConsumer consumer;
-        public ConsumerWorker(KafkaConsumer consumer) {
-            this.consumer = consumer;
+
+        public ConsumerWorker(Map<String,Object> map, String topic) {
+            Properties properties = new Properties();
+            properties.putAll(map);
+            this.consumer = new KafkaConsumer(properties);
+            consumer.subscribe(Collections.singletonList(topic));
         }
 
         @Override
@@ -45,20 +52,27 @@ public class KafkaConConsumer {
 
             String id = Thread.currentThread().getId() + "-" + System.identityHashCode(consumer);
             System.out.println(id+",kafka准备接收消息");
-            while(true){
-                ConsumerRecords<Object, Object> records = consumer.poll(100);
-                for(ConsumerRecord record : records){
-                    System.out.println(id+",kafka接收消息："+record);
+
+            try{
+                while(true){
+                    ConsumerRecords<Object, Object> records = consumer.poll(100);
+                    for(ConsumerRecord record : records){
+                        System.out.println(id+",kafka接收消息："+record);
+                    }
                 }
+
+            }catch (Exception e){
+                e.printStackTrace();
+            }finally {
+                consumer.close();
             }
         }
     }
 
     public static void main(String[] args) {
-        consumer = new KafkaConsumer<>(KafkaConst.consumerConfig("concurrent123", StringDeserializer.class, StringDeserializer.class));
-        consumer.subscribe(Collections.singletonList(BusiConst.HELLO_TOPIC));
+        Map<String, Object> map = KafkaConst.consumerConfigMap("concurrent", StringDeserializer.class, StringDeserializer.class);
         for(int i=0;i<BusiConst.CONCURRENT_PARTITIONS_COUNT;i++){
-            executorService.submit(new ConsumerWorker(consumer));
+            executorService.submit(new ConsumerWorker(map,BusiConst.CONCURRENT_USER_INFO_TOPIC));
         }
     }
 

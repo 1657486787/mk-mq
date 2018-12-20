@@ -14,4 +14,8 @@ Kafka使用原生客户端
     4.1消息的发送模式
         发送消息拿结果：kafkaFutureProducer
         异步获取消息:kafkaAsyncProducer
-    代码：详见包com.suns.sendtype
+        代码：详见包com.suns.sendtype
+    4.2多线程下使用
+        生产者是线程安全的,不同线程可以共用KafkaProducer
+        消费者是非线程安全的，每个线程需要new KafkaConsumer
+        代码：详见包com.suns.concurrent

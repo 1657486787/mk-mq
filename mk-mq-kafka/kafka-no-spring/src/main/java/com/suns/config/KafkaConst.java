@@ -8,9 +8,12 @@
 
 package com.suns.config;
 
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.apache.kafka.common.serialization.Serializer;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -90,6 +93,17 @@ public class KafkaConst {
         properties.put(KEY_DESERIALIZER,keyDeserializeName);
         properties.put(VALUE_DESERIALIZER,valueDeserializeName);
         properties.put(KEY_GROUP_ID,groupId);
+        return properties;
+    }
+
+    public static Map<String,Object> consumerConfigMap(String groupId,
+                                                       Class<? extends Deserializer> keyDeserializeClazz,
+                                                       Class<? extends Deserializer> valueDeserializeClazz){
+        Map<String,Object> properties = new HashMap<String, Object>();
+        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,LOCAL_BROKER);
+        properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,keyDeserializeClazz);
+        properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,valueDeserializeClazz);
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG,groupId);
         return properties;
     }
 }
