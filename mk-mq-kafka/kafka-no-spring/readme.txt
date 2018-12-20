@@ -47,4 +47,15 @@ Kafka使用原生客户端
             2.SelfPartition 实现 Partitioner（具体的分区逻辑在partition方法中实现）
             3.在生产者中，增加properties.put(ProducerConfig.PARTITIONER_CLASS_CONFIG,SelfPartition.class);//设置自定义分区器
         代码：详见包com.suns.selfpartition
+    4.5消费者群组
+        消费者的含义，同一般消息中间件中消费者的概念。在高并发的情况下，生产者产生消息的速度是远大于消费者消费的速度，单个消费者很可能会负担不起，此时有必要对消费者进行横向伸缩，于是我们可以使用多个消费者从同一个主题读取消息，对消息进行分流
+        Kafka里消费者从属于消费者群组，一个群组里的消费者订阅的都是同一个主题，每个消费者接收主题一部分分区的消息：
+        a.如果一个主题有4个分区，群组中只有一个消费者，那么消费者将收到4个分区的消息
+        b.如果一个主题有4个分区，群组中有两个消费者，那么每个消费者将收到2个分区的消息
+        c.如果一个主题有4个分区，群组中有三个消费者，那么有一个消费者将受到两个分区的消息，另外两个消费者将各收到一个分区的消息
+        d.如果一个主题有4个分区，群组中有4个消费者，那么每个消费者将各自收到一个分区的消息
+        e.如果一个主题有4个分区，群组中的消费者大于分区数，那么有4个消费者将收到消息，其余的闲置
 
+        1.先创建一个3分区的主题consumer-group-002（一定要多个分区，要不然看不出效果）
+        2.运行消费者，生产者（其中GroupAConsumer1,GroupAConsumer2,GroupAConsumer3为同个群组，GroupBConsumer1,GroupBConsumer2为同个群组，GroupCConsumer为一个群组）
+        代码：详见包com.suns.consumergroup

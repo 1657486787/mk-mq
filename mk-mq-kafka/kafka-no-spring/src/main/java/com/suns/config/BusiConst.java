@@ -24,9 +24,10 @@ public class BusiConst {
 
     public static final String SELF_PARTITION_TOPIC = "self-partition";
 
-    public static final String CONSUMER_GROUP_TOPIC  = "consumer-group";
+    public static final String CONSUMER_GROUP_TOPIC  = "consumer-group-002";
     public static final String CONSUMER_GROUP_A  = "groupA";
     public static final String CONSUMER_GROUP_B  = "groupB";
+    public static final String CONSUMER_GROUP_C  = "groupC";
 
     public static final String CONSUMER_COMMIT_TOPIC  = "simple";
 }
