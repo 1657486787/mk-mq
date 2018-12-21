@@ -74,3 +74,25 @@ Kafka使用原生客户端
         3.同步和异步提交结合使用：SyncAndAsync
         4.提交特定的偏移量：CommitSpecial
         代码：详见包com.suns.commit
+
+    4.7
+
+    4.8独立消费者
+        1.生产者不用变
+        2.消费者:不指定groupId和subscribe
+        //properties.put(ConsumerConfig.GROUP_ID_CONFIG,"independence_group_id");
+        //consumer.subscribe(Collections.singletonList(BusiConst.INDEPENDENCE_CONSUMER_TOPIC));
+
+        List<TopicPartition> list = new ArrayList<>();
+        List<PartitionInfo> partitionInfos = consumer.partitionsFor(BusiConst.INDEPENDENCE_CONSUMER_TOPIC);
+        if(null != partitionInfos){
+            for(PartitionInfo partitionInfo : partitionInfos){
+                System.out.printf("主题：%s,分区：%s",partitionInfo.topic(),partitionInfo.partition()).println();
+                TopicPartition topicPartition = new TopicPartition(partitionInfo.topic(), partitionInfo.partition());
+                list.add(topicPartition);
+            }
+        }
+        consumer.assign(list);
+        注意：独立消费者会接收到主题下的所有分区的消息，如果动态新增分区后，需要重启消费者才会接受新的分区上的内容。
+
+        代码：详见包com.suns.independconsumer
