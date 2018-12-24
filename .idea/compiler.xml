@@ -13,6 +13,7 @@
         <module name="asyncApp" />
         <module name="delayOrder" />
         <module name="kafka-no-spring" />
+        <module name="kafka-stream" />
         <module name="kafka-with-spring" />
         <module name="kafka-with-springboot" />
         <module name="native" />
