@@ -105,3 +105,5 @@ Kafka使用原生客户端
         注意：独立消费者会接收到主题下的所有分区的消息，如果动态新增分区后，需要重启消费者才会接受新的分区上的内容。
 
         代码：详见包com.suns.independconsumer
+    4.9优雅退出
+    如果确定要退出循环,需要通过另一个线程调用 consumer. wakeup()方法。如果循环运行在主线程里,可以在 ShutdownHook里调用该方法。要记住, consumer. wakeup()是消费者唯一一个可以从其他线程里安全调用的方法。调用 consumer. wakeup()可以退出poll(),并抛出 WakeupException异常。我们不需要处理 Wakeup Exception,因为它只是用于跳出循环的一种方式。不过,在退出线程之前调用 consumer.close()是很有必要的,它会提交任何还没有提交的东西,并向群组协调器发送消息,告知自己要离开群组,接下来就会触发再均衡,而不需要等待会话超时
