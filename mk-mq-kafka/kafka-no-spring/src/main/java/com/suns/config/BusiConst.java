@@ -32,5 +32,6 @@ public class BusiConst {
     public static final String CONSUMER_COMMIT_TOPIC  = "simple";
 
     public static final String INDEPENDENCE_CONSUMER_TOPIC = "independconsumer-topic-001";
-    public static final int INDEPENDENCE_CONSUMER_TOPIC_PARTITIONS_COUNT = 1;
+
+    public static final String REBALANCE_TOPIC = "rebalance-topic-001";
 }

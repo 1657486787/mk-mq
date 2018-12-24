@@ -75,8 +75,17 @@ Kafka使用原生客户端
         4.提交特定的偏移量：CommitSpecial
         代码：详见包com.suns.commit
 
-    4.7
+    4.7分区再均衡
+        在提交偏移量一节中提到过,消费者在退出和进行分区再均衡之前,会做一些清理工作比如，提交偏移量、关闭文件句柄、数据库连接等。
+        在为消费者分配新分区或移除旧分区时,可以通过消费者API执行一些应用程序代码，在调用 subscribe()方法时传进去一个 ConsumerRebalancelistener实例就可以了。
+        ConsumerRebalancelistener有两个需要实现的方法。
+        1) public void onPartitionsRevoked( Collection< TopicPartition> partitions)方法会在
+            再均衡开始之前和消费者停止读取消息之后被调用。如果在这里提交偏移量，下一个接管分区的消费者就知道该从哪里开始读取了
+        2) public void onPartitionsAssigned( Collection< TopicPartition> partitions)方法会在重新分配分区之后和消费者开始读取消息之前被调用。
+            具体使用，我们先创建一个3分区的主题，然后实验一下
+        kafka-topic.bat --zookeeper localhost:2181/kafka --alter --topic rebalance-topic-001 --partitions 3
 
+        代码：详见包com.suns.rebalance
     4.8独立消费者
         1.生产者不用变
         2.消费者:不指定groupId和subscribe
