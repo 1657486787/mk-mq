@@ -1,0 +1,17 @@
+kafka与springboot整合
+1.加入依赖
+     <dependency>
+        <groupId>org.springframework.kafka</groupId>
+        <artifactId>spring-kafka</artifactId>
+        <version>1.1.5.RELEASE</version>
+     </dependency>
+2.生产者
+    生产者配置：KafkaProducerConfig
+    生产者监听：SendListener
+3.消费者
+    消费者配置：KafkaConsumerConf
+    消费者自动确认监听：MyListener
+    消费者手工确认监听：MyListenerAck
+4.启动后访问：
+    消费者自动确认：http://localhost:8080/kafka-springboot/send?key=k1&value=v2
+    消费者手工确认：http://localhost:8080/kafka-springboot/sendAck?key=k1&value=v2
