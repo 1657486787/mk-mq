@@ -67,4 +67,8 @@ kafka
     6.2kafka与spring整合：kafka-with-spring
     6.3kafka与springboot整合：kafka-with-spring-boot
     6.4kafka与流式计算：kafka-stream
-    6.5实战：削峰填谷：kafka-trafic-sharping
+    6.5实战：削峰填谷：
+        （削峰填谷）流量整形的服务端:kafka-trafic-sharping
+        （削峰填谷）流量整形的客户端:kafka-trafic-sharping-client
+            http://localhost:8090/buyTicket
+            http://localhost:8080

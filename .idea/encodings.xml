@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/mk-mq-kafka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-kafka/kafka-no-spring" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-kafka/kafka-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mk-mq-kafka/kafka-trafic-sharping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mk-mq-kafka/kafka-trafic-sharping-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-kafka/kafka-with-spring" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-kafka/kafka-with-springboot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mk-mq-rabbitmq" charset="UTF-8" />

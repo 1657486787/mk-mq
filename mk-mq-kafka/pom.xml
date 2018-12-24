@@ -18,6 +18,8 @@
         <module>kafka-with-spring</module>
         <module>kafka-with-springboot</module>
         <module>kafka-stream</module>
+        <module>kafka-trafic-sharping</module>
+        <module>kafka-trafic-sharping-client</module>
     </modules>
 
     <name>mk-mq-kafka</name>
