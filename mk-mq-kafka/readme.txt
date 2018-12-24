@@ -64,3 +64,7 @@ kafka
                 Kafka把所有的消息都保存在磁盘上，存放这些数据的目录通过log.dirs指定
 6.使用：
     6.1原生客户端：kafka-no-spring
+    6.2kafka与spring整合：kafka-with-spring
+    6.3kafka与springboot整合：kafka-with-spring-boot
+    6.4kafka与流式计算：kafka-stream
+    6.5实战：削峰填谷：kafka-trafic-sharping

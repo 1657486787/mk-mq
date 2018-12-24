@@ -15,6 +15,7 @@
     <version>1.0</version>
     <modules>
         <module>kafka-no-spring</module>
+        <module>kafka-with-spring</module>
     </modules>
 
     <name>mk-mq-kafka</name>
